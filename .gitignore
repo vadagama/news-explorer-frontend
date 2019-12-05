@@ -1,0 +1,4 @@
+/node_modules
+/gist
+node_modules/gh-pages/
+.DS_Store
