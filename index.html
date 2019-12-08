@@ -4,19 +4,61 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="News Explorer - агрегатор новостей">
+  <meta name="author" content="Oleg Krasnov">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Mesto</title>
-  <link rel="stylesheet" href="style.04b1f6d8785439df1bbc.css?600c2dc62247dfef9038">
+  <title>News explorer</title>
+  <link rel="stylesheet" href="style.5b9afaadbbf83fae10e8.css?75a33f795bd3a2482ff0">
+  <link rel="shortcut icon" type="image/png" href="images/favicon630d526173bef801387666afaff89d1c.png" />
 </head>
 
 <body>
-  <div>
-    <header>
+  <div class="root">
+    <header class="header">
+      <div class="header-menu">
+        <a href="#" class="header-menu__logo">NewsExplorer</a>
+        <ul class="header-menu__items">
+          <li><a href="#" class="header-menu__item">Главная</a></li>
+          <li><a href="#" class="header-menu__item">О проекте</a></li>
+          <li><a href="#" class="button button_login header-menu__item">Авторизоваться</a></li>
+        </ul>
+      </div>
+      <hr class="header-menu__devider">
+      <div class="search">
+        <h1 class="search__header">Что в мире творится?</h1>
+        <p class="search__content">Находите самые свежие статьи на любую тему и сохраняйте в своём личном кабинете.</p>
+        <div class="search-field">
+          <input class="search-field__input"></input>
+          <button class="search-field__button">Искать</button>
+        </div>
+      </div>
     </header>
-    <div></div>
+    <div class="about-author">
+      <img src="images/about-authore4a8fe7853596879b8dcc1aec202a19b.png" alt="" class="about-author__img">
+      <div class="about-author__block">
+        <h1 class="about-author__header">Об авторе</h1>
+        <p class="about-author__text">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы
+          занимаетесь, какими технологиями разработки владеете.</p>
+          <p class="about-author__text">
+          Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь
+          потенциальным заказчикам.</p>
+      </div>
+    </div>
+    <footer class="footer">
+      <span class="footer__copyrights">© 2019 Supersite</span>
+      <ul class="footer__menu">
+        <li><a class="footer__menu-item" href="#">Главная</a></li>
+        <li><a class="footer__menu-item" href="#">О проекте</a></li>
+        <li><a class="footer__menu-item" href="#">Яндекс.Практикум</a></li>
+      </ul>
+      <div class="social-section">
+        <a href="#" class="social-section__github"><img src="images/github-iconef17998440751ab3bc5883e0084d9f57.svg" alt="github"></a>
+        <a href="#" class="social-section__facebook"><img src="images/fb-iconf6b9c81fa1f207b310c694fde404ef4c.svg" alt="facebook"></a>
+      </div>
+    </footer>
 
   </div>
-  <script src="main.d1dd7e8f272def110a81.js?600c2dc62247dfef9038"></script>
+  <script src="main.d1dd7e8f272def110a81.js?75a33f795bd3a2482ff0"></script>
 </body>
 
 </html>
