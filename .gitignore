@@ -2,3 +2,4 @@
 /gist
 node_modules/gh-pages/
 .DS_Store
+dist
