@@ -1,6 +1,24 @@
 @import url(vendor/normalize.css);
 @import url(vendor/fonts.css);
+@import url(blocks/root/root.css);
+@import url(blocks/header/header.css);
+@import url(blocks/header-menu/header-menu.css);
+@import url(blocks/button/button.css);
+@import url(blocks/search/search.css);
+@import url(blocks/search-field/search-field.css);
+@import url(blocks/about-author/about-author.css);
+@import url(blocks/footer/footer.css);
+@import url(blocks/social-section/social-section.css);
 
 body {
   background-color: #fff;
 }
+
+h1 {
+  margin: 0;
+}
+
+/* div {
+  border: 1px red solid;
+}
+ */

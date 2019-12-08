@@ -4,49 +4,58 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="News Explorer - агрегатор новостей">
+  <meta name="author" content="Oleg Krasnov">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>News explorer</title>
   <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
+  <link rel="shortcut icon" type="image/png" href="<%=require ('./images/favicon.png') %>" />
 </head>
 
 <body>
   <div class="root">
     <header class="header">
-      <h1 class="header__logo">NewsExplorer</h1>
-      <ul class="header__menu">
-        <li class="header__menu-item"><a href="#">Главная</a></li>
-        <li class="header__menu-item"><a href="#">О проекте</a></li>
-        <li class="button button_login"><a href="#">Авторизоваться</a></li>
-      </ul>
-    </header>
-    <div class="search">
-      <h1 class="search__header">Что в мире творится?</h1>
-      <p class="search__content">Находите самые свежие статьи на любую тему и сохраняйте в своём личном кабинете.</p>
-      <div class="search-field">
-        <input class="search-field__input"></input>
-        <button class="search-field__button">Искать</button>
+      <div class="header-menu">
+        <a href="#" class="header-menu__logo">NewsExplorer</a>
+        <ul class="header-menu__items">
+          <li><a href="#" class="header-menu__item">Главная</a></li>
+          <li><a href="#" class="header-menu__item">О проекте</a></li>
+          <li><a href="#" class="button button_login header-menu__item">Авторизоваться</a></li>
+        </ul>
       </div>
-    </div>
+      <hr class="header-menu__devider">
+      <div class="search">
+        <h1 class="search__header">Что в мире творится?</h1>
+        <p class="search__content">Находите самые свежие статьи на любую тему и сохраняйте в своём личном кабинете.</p>
+        <div class="search-field">
+          <input class="search-field__input"></input>
+          <button class="search-field__button">Искать</button>
+        </div>
+      </div>
+    </header>
     <div class="about-author">
       <img src="<%=require ('./images/about-author.png') %>" alt="" class="about-author__img">
-      <h1 class="about-author__header">Об авторе</h1>
-      <p class="about-author__text">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы
-        занимаетесь, какими технологиями разработки владеете.</br>
-        Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь
-        потенциальным заказчикам.</p>
+      <div class="about-author__block">
+        <h1 class="about-author__header">Об авторе</h1>
+        <p class="about-author__text">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы
+          занимаетесь, какими технологиями разработки владеете.</p>
+          <p class="about-author__text">
+          Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь
+          потенциальным заказчикам.</p>
+      </div>
     </div>
-    <div class="footer">
-        <span class="footer__copyrights">© 2019  Supersite</span>
-        <ul class="footer__menu">
-            <li class="footer__menu-item"><a href="#">Главная</a></li>
-            <li class="footer__menu-item"><a href="#">О проекте</a></li>
-            <li class="footer__menu-item"><a href="#">Яндекс.Практикум</a></li>
-          </ul>
-          <div class="social-section">
-            <img src="<%=require ('./images/github-icon.png') %>" alt="" class="social-section__github">
-            <img src="<%=require ('./images/fb-icon.png') %>" alt="" class="social-section__facebook">
-          </div>
-    </div>
+    <footer class="footer">
+      <span class="footer__copyrights">© 2019 Supersite</span>
+      <ul class="footer__menu">
+        <li><a class="footer__menu-item" href="#">Главная</a></li>
+        <li><a class="footer__menu-item" href="#">О проекте</a></li>
+        <li><a class="footer__menu-item" href="#">Яндекс.Практикум</a></li>
+      </ul>
+      <div class="social-section">
+        <a href="#" class="social-section__github"><img src="<%=require ('./images/github-icon.svg') %>" alt="github"></a>
+        <a href="#" class="social-section__facebook"><img src="<%=require ('./images/fb-icon.svg') %>" alt="facebook"></a>
+      </div>
+    </footer>
 
   </div>
   <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>

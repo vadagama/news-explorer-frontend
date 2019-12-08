@@ -1,0 +1,16 @@
+.footer__menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-width: 430px;
+    justify-content: space-between;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #1A1B22;
+    list-style-type: none;
+    padding: 0;
+}

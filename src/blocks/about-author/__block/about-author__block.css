@@ -1,0 +1,6 @@
+.about-author__block {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+
+}

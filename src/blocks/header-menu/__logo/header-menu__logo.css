@@ -1,0 +1,10 @@
+.header-menu__logo {
+    position: absolute;
+    left: 104px;
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+}

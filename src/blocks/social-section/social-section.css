@@ -1,0 +1,8 @@
+@import url(__facebook/social-section__facebook.css);
+@import url(__github/social-section__github.css);
+
+.social-section {
+    flex: 1;
+    text-align: end;
+    min-width: 80px;
+}

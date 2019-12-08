@@ -1,0 +1,9 @@
+.button {
+    border-radius: 100px;
+}
+
+.button_login {
+    border: solid #fff 1px;
+    border-radius: 100px;
+    padding: 12px;
+}
