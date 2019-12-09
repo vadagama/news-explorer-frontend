@@ -14,6 +14,37 @@
 
 <body>
   <div class="root">
+
+  <!-- Login popup module start -->
+      <div class="popup">
+        <div class="popup-content">
+          <a href="/"><img class="popup-closer" src="<%=require ('./images/close-popup-icon.svg') %>"></a>
+          <form class="form">
+              <h1 class="form__header">Вход</h1>
+              <span class="form__input-label">Email</span>
+              <input class="form__input" type="text" name="username" placeholder="Введите почту"/>
+              <label class="form__input-error" for="username">Неправильный формат email</label>
+              <span class="form__input-label">Пароль</span>
+              <input class="form__input" type="password" name="password" placeholder="Введите пароль"/>
+              <label class="form__input-error" for="password">Неправильный формат пароля</label>
+              <button class="form__button" type="submit" value="Login" name="button">Войти</button>
+              <span class="form__">или <a>Зарегистрироваться</a></span>
+            </form>
+        </div>
+      </div>
+  <!-- Login popup module end -->
+
+  <!-- Registration popup module start -->
+<!--   <div class="popup-wrapper">
+      <div class="popup">
+        <div class="popup-content">
+          <label class="popup-closer">
+              <img src="<%=require ('./images/close-popup-icon.svg') %>">
+          </label>
+        </div>
+      </div>
+    </div> -->
+  <!-- Registration popup module end -->
     <header class="header">
       <div class="header-menu">
         <a href="#" class="header-menu__logo">NewsExplorer</a>

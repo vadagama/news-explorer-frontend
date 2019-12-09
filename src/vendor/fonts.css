@@ -53,3 +53,11 @@
        url('./fonts/roboto-slab-v10-latin_cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
        url('./fonts/roboto-slab-v10-latin_cyrillic-regular.svg#RobotoSlab') format('svg'); /* Legacy iOS */
 }
+
+/* Inter regular */
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 400;
+  src: url("./fonts/Inter-Regular.woff2") format("woff2");
+}
