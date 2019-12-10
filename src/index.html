@@ -16,35 +16,61 @@
   <div class="root">
 
   <!-- Login popup module start -->
-      <div class="popup">
+<!--       <div class="popup">
         <div class="popup-content">
           <a href="/"><img class="popup-closer" src="<%=require ('./images/close-popup-icon.svg') %>"></a>
           <form class="form">
               <h1 class="form__header">Вход</h1>
               <span class="form__input-label">Email</span>
-              <input class="form__input" type="text" name="username" placeholder="Введите почту"/>
+              <input class="form__input" type="text" name="username" placeholder="Введите email"/>
               <label class="form__input-error" for="username">Неправильный формат email</label>
               <span class="form__input-label">Пароль</span>
               <input class="form__input" type="password" name="password" placeholder="Введите пароль"/>
               <label class="form__input-error" for="password">Неправильный формат пароля</label>
               <button class="form__button" type="submit" value="Login" name="button">Войти</button>
-              <span class="form__">или <a>Зарегистрироваться</a></span>
+              <span class="form__another-action-label">или <a class="form__another-action" href="/">Зарегистрироваться</a></span>
             </form>
         </div>
-      </div>
+      </div> -->
   <!-- Login popup module end -->
 
   <!-- Registration popup module start -->
-<!--   <div class="popup-wrapper">
-      <div class="popup">
-        <div class="popup-content">
-          <label class="popup-closer">
-              <img src="<%=require ('./images/close-popup-icon.svg') %>">
-          </label>
-        </div>
-      </div>
-    </div> -->
+<!--   <div class="popup">
+    <div class="popup-content-registration">
+      <a href="/"><img class="popup-closer" src="<%=require ('./images/close-popup-icon.svg') %>"></a>
+      <form class="form">
+          <h1 class="form__header">Регистрация</h1>
+          <span class="form__input-label">Email</span>
+          <input class="form__input" type="text" name="username" placeholder="Введите email"/>
+          <label class="form__input-error" for="username">Неправильный формат email</label>
+          <span class="form__input-label">Пароль</span>
+          <input class="form__input" type="password" name="password" placeholder="Введите пароль"/>
+          <label class="form__input-error" for="password">Неправильный формат пароля</label>
+          <span class="form__input-label">Имя</span>
+          <input class="form__input" type="password" name="password" placeholder="Введите свое имя"/>
+          <label class="form__input-error" for="password">Неправильный формат имени</label>
+          <label class="form__input-error form__input-error_button" for="button">Неправильный формат имени</label>
+          <button class="form__button" type="submit" value="Login" name="button">Войти</button>
+          <span class="form__another-action-label">или <a class="form__another-action" href="/">Зарегистрироваться</a></span>
+        </form>
+    </div>
+  </div> -->
   <!-- Registration popup module end -->
+
+  <!-- Registration done popup module start -->
+<!--    <div class="popup">
+    <div class="popup-content-done">
+      <a href="/"><img class="popup-closer" src="<%=require ('./images/close-popup-icon.svg') %>"></a>
+      <form class="form">
+          <h1 class="form__header">Пользователь успешно зарегистрирован!</h1>
+          <a class="form__link" href="/">Выполнить вход</a>
+        </form>
+    </div>
+  </div> -->
+  <!-- Registration done popup module end -->
+
+    <!-- # Header section -->
+
     <header class="header">
       <div class="header-menu">
         <a href="#" class="header-menu__logo">NewsExplorer</a>
@@ -64,6 +90,18 @@
         </div>
       </div>
     </header>
+
+    <!-- # Search results section -->
+
+    <div class="search-results">
+      <div class="search-results__title"></div>
+
+      .search-results__
+
+    </div>
+
+    <!-- # About author section -->
+
     <div class="about-author">
       <img src="<%=require ('./images/about-author.png') %>" alt="" class="about-author__img">
       <div class="about-author__block">
@@ -75,6 +113,9 @@
           потенциальным заказчикам.</p>
       </div>
     </div>
+
+    <!-- # Footer section -->
+
     <footer class="footer">
       <span class="footer__copyrights">© 2019 Supersite</span>
       <ul class="footer__menu">
