@@ -7,3 +7,21 @@
     border-radius: 100px;
     padding: 12px;
 }
+
+.button_more-cards {
+    border: solid #fff 1px;
+    border-radius: 100px;
+    padding: 12px;
+    outline: none;
+    cursor: pointer;
+    width: 288px;
+    height: 64px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 64px;
+}
