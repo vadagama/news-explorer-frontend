@@ -1,9 +1,18 @@
 @import url(__content/search__content.css);
 @import url(__header/search__header.css);
+@import url(__tag-list/search__tag-list.css);
+@import url(__pre-header/search__pre-header.css);
 
 .search {
     text-align: left;
     width: 608px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.search_done {
+    text-align: left;
+    width: 608px;
+    padding-left: 104px;
+    padding-top: 40px;
 }

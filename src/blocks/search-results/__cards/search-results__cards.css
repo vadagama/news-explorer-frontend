@@ -4,3 +4,9 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 16px;
 }
+
+.search-results__cards_done {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 16px;
+}

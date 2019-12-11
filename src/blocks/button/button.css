@@ -8,6 +8,12 @@
     padding: 12px;
 }
 
+.button_login-light {
+    border: solid #1A1B22 1px;
+    border-radius: 100px;
+    padding: 12px;
+}
+
 .button_more-cards {
     border: solid #fff 1px;
     border-radius: 100px;

@@ -6,6 +6,7 @@
 @import url(__source/card__source.css);
 @import url(__title/card__title.css);
 @import url(__bottom-section/card__bottom-section.css);
+@import url(__delete/card__delete.css);
 
 .card {
     background: #fff;

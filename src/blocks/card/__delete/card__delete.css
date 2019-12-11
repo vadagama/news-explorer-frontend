@@ -1,4 +1,4 @@
-.card__bookmark {
+.card__delete {
     position: absolute;
     top: 24px;
     right: 24px;
@@ -6,13 +6,13 @@
     height: 40px;
     background: #FFFFFF;
     border-radius: 8px;
-    background-image: url(../../../images/bookmark-icon-normal.svg);
+    background-image: url(../../../images/trash-icon-normal.svg);
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: center;
 }
 
-.card__bookmark_marked {
+.card__delete_marked {
     position: absolute;
     top: 24px;
     right: 24px;
@@ -20,7 +20,7 @@
     height: 40px;
     background: #FFFFFF;
     border-radius: 8px;
-    background-image: url(../../../images/bookmark-icon-marked.svg);
+    background-image: url(../../../images/trash-icon-marked.svg);
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: center;

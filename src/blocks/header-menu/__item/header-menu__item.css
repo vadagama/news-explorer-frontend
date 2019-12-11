@@ -9,3 +9,7 @@
     line-height: 24px;
     text-align: center;
 }
+
+.header-menu__item_light {
+    color: #1A1B22;
+}
