@@ -14,31 +14,93 @@
 
 <body>
   <div class="root">
-    <header class="header_login">
-      <div class="header-menu ">
-        <a href="#" class="header-menu__logo header-menu__logo_light">NewsExplorer</a>
+
+    <!-- Login popup module start -->
+    <!--       <div class="popup">
+        <div class="popup-content">
+          <a href="/"><img class="popup-closer" src="<%=require ('./images/close-popup-icon.svg') %>"></a>
+          <form class="form">
+              <h1 class="form__header">Вход</h1>
+              <span class="form__input-label">Email</span>
+              <input class="form__input" type="text" name="username" placeholder="Введите email"/>
+              <label class="form__input-error" for="username">Неправильный формат email</label>
+              <span class="form__input-label">Пароль</span>
+              <input class="form__input" type="password" name="password" placeholder="Введите пароль"/>
+              <label class="form__input-error" for="password">Неправильный формат пароля</label>
+              <button class="form__button" type="submit" value="Login" name="button">Войти</button>
+              <span class="form__another-action-label">или <a class="form__another-action" href="/">Зарегистрироваться</a></span>
+            </form>
+        </div>
+      </div> -->
+    <!-- Login popup module end -->
+
+    <!-- Registration popup module start -->
+    <!--   <div class="popup">
+    <div class="popup-content-registration">
+      <a href="/"><img class="popup-closer" src="<%=require ('./images/close-popup-icon.svg') %>"></a>
+      <form class="form">
+          <h1 class="form__header">Регистрация</h1>
+          <span class="form__input-label">Email</span>
+          <input class="form__input" type="text" name="username" placeholder="Введите email"/>
+          <label class="form__input-error" for="username">Неправильный формат email</label>
+          <span class="form__input-label">Пароль</span>
+          <input class="form__input" type="password" name="password" placeholder="Введите пароль"/>
+          <label class="form__input-error" for="password">Неправильный формат пароля</label>
+          <span class="form__input-label">Имя</span>
+          <input class="form__input" type="password" name="password" placeholder="Введите свое имя"/>
+          <label class="form__input-error" for="password">Неправильный формат имени</label>
+          <label class="form__input-error form__input-error_button" for="button">Неправильный формат имени</label>
+          <button class="form__button" type="submit" value="Login" name="button">Войти</button>
+          <span class="form__another-action-label">или <a class="form__another-action" href="/">Зарегистрироваться</a></span>
+        </form>
+    </div>
+  </div> -->
+    <!-- Registration popup module end -->
+
+    <!-- Registration done popup module start -->
+    <!--    <div class="popup">
+    <div class="popup-content-done">
+      <a href="/"><img class="popup-closer" src="<%=require ('./images/close-popup-icon.svg') %>"></a>
+      <form class="form">
+          <h1 class="form__header">Пользователь успешно зарегистрирован!</h1>
+          <a class="form__link" href="/">Выполнить вход</a>
+        </form>
+    </div>
+  </div> -->
+    <!-- Registration done popup module end -->
+
+    <!-- # Header section -->
+
+    <header class="header">
+      <div class="header-menu">
+        <a href="#" class="header-menu__logo">NewsExplorer</a>
         <ul class="header-menu__items">
-          <li><a href="#" class="header-menu__item header-menu__item_light">Главная</a></li>
-          <li><a href="#" class="header-menu__item header-menu__item_light">О проекте</a></li>
-          <li><a href="#" class="header-menu__item header-menu__item_light">Сохраненные статьи</a></li>
-          <li><a href="#" class="button button_login-light header-menu__item header-menu__item_light">Грета <img src="<%=require ('./images/logout-icon-light.svg') %>" alt="Logout icon"></a></li>
+          <li><a href="#" class="header-menu__item">Главная</a></li>
+          <li><a href="#" class="header-menu__item">О проекте</a></li>
+          <li><a href="#" class="button button_login header-menu__item">Авторизоваться</a></li>
         </ul>
       </div>
       <hr class="header-menu__devider">
-      <div class="search_done">
-        <p class="search__pre-header">Сохранённые статьи</p>
-        <h1 class="search__header_done">Грета, у вас 5 сохранённых статей</h1>
-        <p class="search__tag-list">По ключевым словам: <span class="search__tag-list_strong">Природа</span>, <span class="search__tag-list_strong">Тайга</span> и <span class="search__tag-list_strong">2 другим</span></p>
+      <div class="search">
+        <h1 class="search__header">Что в мире творится?</h1>
+        <p class="search__content">Находите самые свежие статьи на любую тему и сохраняйте в своём личном кабинете.</p>
+        <div class="search-field">
+          <input class="search-field__input"></input>
+          <button class="search-field__button">Искать</button>
+        </div>
       </div>
     </header>
 
     <!-- # Search results section -->
 
     <div class="search-results">
+      <h1 class="search-results__title">Результаты поиска</h1>
+
       <div class="search-results__cards">
         <div class="card">
           <div class="card__image">
-            <a class="card__delete" href="/"></a>
+            <a class="card__login-label" href="/">Войдите, чтобы сохранять статьи</a>
+            <a class="card__bookmark" href="/"></a>
           </div>
           <div class="card__bottom-section">
             <div class="card__date">2 августа, 2019</div>
@@ -53,7 +115,7 @@
         <div class="card">
           <div class="card__image">
             <a class="card__login-label" href="/">Войдите, чтобы сохранять статьи</a>
-            <a class="card__delete_marked" href="/"></a>
+            <a class="card__bookmark" href="/"></a>
           </div>
           <div class="card__bottom-section">
             <div class="card__date">2 августа, 2019</div>
@@ -67,7 +129,8 @@
         
         <div class="card">
           <div class="card__image">
-            <a class="card__delete" href="/"></a>
+            <a class="card__login-label" href="/">Войдите, чтобы сохранять статьи</a>
+            <a class="card__bookmark" href="/"></a>
           </div>
           <div class="card__bottom-section">
             <div class="card__date">2 августа, 2019</div>
@@ -81,7 +144,8 @@
 
         <div class="card">
           <div class="card__image">
-            <a class="card__delete" href="/"></a>
+            <a class="card__login-label" href="/">Войдите, чтобы сохранять статьи</a>
+            <a class="card__bookmark" href="/"></a>
           </div>
           <div class="card__bottom-section">
             <div class="card__date">2 августа, 2019</div>
@@ -93,8 +157,28 @@
           </div>
         </div>
         </div>
+
+        
+
+
+
         <button class="button button_more-cards">Показать еще</button>
 
+      </div>
+
+      <!-- # About author section -->
+
+      <div class="about-author">
+        <img src="<%=require ('./images/about-author.png') %>" alt="" class="about-author__img">
+        <div class="about-author__block">
+          <h1 class="about-author__header">Об авторе</h1>
+          <p class="about-author__text">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем
+            вы
+            занимаетесь, какими технологиями разработки владеете.</p>
+          <p class="about-author__text">
+            Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь
+            потенциальным заказчикам.</p>
+        </div>
       </div>
 
       <!-- # Footer section -->
