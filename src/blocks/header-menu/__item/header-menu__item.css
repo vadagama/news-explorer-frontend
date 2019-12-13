@@ -13,3 +13,35 @@
 .header-menu__item_light {
     color: #1A1B22;
 }
+
+.header-menu__item:hover{
+    border: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-width: 3px;
+    padding-bottom: 28px;
+    border-spacing: 20px;
+}
+
+.header-menu__item_light:hover {
+    border: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-width: 3px;
+    padding-bottom: 28px;
+    border-spacing: 20px;
+}
+
+.header-menu__item_button {
+    margin-left: 32px;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+}

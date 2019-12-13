@@ -5,8 +5,20 @@
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 1;
 }
+
+.popup_login {
+  visibility: hidden;
+}
+
+.popup_registration {
+  visibility: hidden;
+}
+
+.popup_done {
+  visibility: hidden;
+}
+
 
 .popup:before {
   display: block;

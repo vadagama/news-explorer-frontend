@@ -16,7 +16,7 @@
   <div class="root">
 
     <!-- Login popup module start -->
-    <!--       <div class="popup">
+    <div class="popup popup_login">
         <div class="popup-content">
           <a href="/"><img class="popup-closer" src="<%=require ('./images/close-popup-icon.svg') %>"></a>
           <form class="form">
@@ -31,11 +31,11 @@
               <span class="form__another-action-label">или <a class="form__another-action" href="/">Зарегистрироваться</a></span>
             </form>
         </div>
-      </div> -->
+      </div>
     <!-- Login popup module end -->
 
     <!-- Registration popup module start -->
-    <!--   <div class="popup">
+    <div class="popup popup_registration">
     <div class="popup-content-registration">
       <a href="/"><img class="popup-closer" src="<%=require ('./images/close-popup-icon.svg') %>"></a>
       <form class="form">
@@ -50,15 +50,15 @@
           <input class="form__input" type="password" name="password" placeholder="Введите свое имя"/>
           <label class="form__input-error" for="password">Неправильный формат имени</label>
           <label class="form__input-error form__input-error_button" for="button">Неправильный формат имени</label>
-          <button class="form__button" type="submit" value="Login" name="button">Войти</button>
+          <button class="form__button form__button_disable" type="submit" value="Login" name="button">Войти</button>
           <span class="form__another-action-label">или <a class="form__another-action" href="/">Зарегистрироваться</a></span>
         </form>
     </div>
-  </div> -->
+  </div>
     <!-- Registration popup module end -->
 
     <!-- Registration done popup module start -->
-    <!--    <div class="popup">
+  <div class="popup popup_done">
     <div class="popup-content-done">
       <a href="/"><img class="popup-closer" src="<%=require ('./images/close-popup-icon.svg') %>"></a>
       <form class="form">
@@ -66,7 +66,7 @@
           <a class="form__link" href="/">Выполнить вход</a>
         </form>
     </div>
-  </div> -->
+  </div> 
     <!-- Registration done popup module end -->
 
     <!-- # Header section -->
@@ -77,7 +77,7 @@
         <ul class="header-menu__items">
           <li><a href="#" class="header-menu__item">Главная</a></li>
           <li><a href="#" class="header-menu__item">О проекте</a></li>
-          <li><a href="#" class="button button_login header-menu__item">Авторизоваться</a></li>
+          <li><a href="#" class="button button_login header-menu__item_button">Авторизоваться</a></li>
         </ul>
       </div>
       <hr class="header-menu__devider">
@@ -95,7 +95,6 @@
 
     <div class="search-results">
       <h1 class="search-results__title">Результаты поиска</h1>
-
       <div class="search-results__cards">
         <div class="card">
           <div class="card__image">
@@ -114,8 +113,7 @@
 
         <div class="card">
           <div class="card__image">
-            <a class="card__login-label" href="/">Войдите, чтобы сохранять статьи</a>
-            <a class="card__bookmark" href="/"></a>
+            <a class="card__bookmark_marked" href="/"></a>
           </div>
           <div class="card__bottom-section">
             <div class="card__date">2 августа, 2019</div>
@@ -129,7 +127,6 @@
         
         <div class="card">
           <div class="card__image">
-            <a class="card__login-label" href="/">Войдите, чтобы сохранять статьи</a>
             <a class="card__bookmark" href="/"></a>
           </div>
           <div class="card__bottom-section">
@@ -144,7 +141,6 @@
 
         <div class="card">
           <div class="card__image">
-            <a class="card__login-label" href="/">Войдите, чтобы сохранять статьи</a>
             <a class="card__bookmark" href="/"></a>
           </div>
           <div class="card__bottom-section">
@@ -157,13 +153,7 @@
           </div>
         </div>
         </div>
-
-        
-
-
-
         <button class="button button_more-cards">Показать еще</button>
-
       </div>
 
       <!-- # About author section -->

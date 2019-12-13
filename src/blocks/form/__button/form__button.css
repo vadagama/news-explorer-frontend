@@ -13,3 +13,9 @@
     outline: none;
     cursor: pointer;
 }
+
+.form__button_disable {
+    background: #E6E8EB;
+    color: #B6BCBF;
+    border-color: #E6E8EB;;
+}

@@ -12,3 +12,7 @@
     padding-bottom: 9px;
     margin-bottom: 3px;
 }
+
+.form__input:hover {
+    border-bottom: 1px solid #000;
+}
