@@ -1,5 +1,4 @@
 .header-menu__item {
-    margin-left: 32px;
     color: #ffffff;
     text-decoration: none;
     font-family: Roboto;
@@ -35,7 +34,6 @@
 }
 
 .header-menu__item_button {
-    margin-left: 32px;
     color: #ffffff;
     text-decoration: none;
     font-family: Roboto;
@@ -44,4 +42,37 @@
     font-size: 18px;
     line-height: 24px;
     text-align: center;
+}
+
+.header-menu__item_button-light {
+    color: #1A1B22;
+    text-decoration: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.header-menu__item_menu {
+    margin-left: 0px;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    visibility: hidden;
+    width: 0px;
+}
+
+@media only screen and (max-width : 768px){
+    .header-menu__item_menu {
+        visibility: visible;
+        margin-left: 16px;
+        width: 24px;
+    }
 }

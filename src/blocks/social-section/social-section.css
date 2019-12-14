@@ -6,3 +6,11 @@
     text-align: end;
     min-width: 80px;
 }
+
+@media only screen and (max-width : 768px){
+    .social-section  {
+        position: absolute;
+        right: 16px;
+        bottom: 157px;
+    }
+}

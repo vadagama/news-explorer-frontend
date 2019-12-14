@@ -1,4 +1,4 @@
-.search-results__title {
+.clients__title {
     padding-top: 80px;
     font-family: Roboto Slab;
     font-style: normal;
@@ -9,7 +9,7 @@
 }
 
 @media only screen and (max-width : 425px) {
-    .search-results__title  {
+    .clients__title  {
         font-size: 30px;
     }
 }

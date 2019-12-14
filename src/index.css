@@ -13,6 +13,7 @@
 @import url(blocks/form/form.css);
 @import url(blocks/search-results/search-results.css);
 @import url(blocks/card/card.css);
+@import url(blocks/clients/clients.css);
 
 body {
   background-color: #fff;

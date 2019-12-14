@@ -11,3 +11,8 @@
     color: #B6BCBF;
     border: none;
 }
+
+.search-field__input:hover {
+    color: #1A1B22;
+    border: none;
+}

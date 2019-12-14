@@ -5,14 +5,42 @@
 
 .search {
     text-align: left;
-    width: 608px;
+    max-width: 608px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .search_done {
     text-align: left;
-    width: 608px;
+    max-width: 608px;
     padding-left: 104px;
     padding-top: 40px;
+}
+
+@media only screen and (min-width : 426px) and (max-width : 768px) {
+    .search {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media only screen and (max-width : 425px){
+    .search {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+@media only screen and (min-width : 426px) and (max-width : 768px) {
+    .search_done {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media only screen and (max-width : 425px){
+    .search_done {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
 }

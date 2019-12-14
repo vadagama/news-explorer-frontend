@@ -12,3 +12,15 @@
 .header-menu__logo_light {
     color: #1A1B22;
 }
+
+@media only screen and (min-width : 426px) and (max-width : 768px) {
+    .header-menu__logo {
+        left: 40px;
+    }
+}
+
+@media only screen and (max-width : 425px){
+    .header-menu__logo  {
+        left: 16px;
+    }
+}

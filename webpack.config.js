@@ -11,7 +11,7 @@ new webpack.DefinePlugin({
 });
 
 module.exports = {
-    entry: { main: './src/index.js' },
+    entry: { main: './src/index.js'},
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: '[name].[chunkhash].js'
@@ -64,11 +64,23 @@ module.exports = {
             },
             canPrint: true
        }),
+       new HtmlWebpackPlugin({
+        inject: false,
+        hash: true,
+        template: './src/index.html',
+        filename: 'index.html'
+    }),
         new HtmlWebpackPlugin({
             inject: false,
             hash: true,
-            template: './src/index.html',
-            filename: 'index.html'
+            template: './src/saved.html',
+            filename: 'saved.html'
+        }),
+        new HtmlWebpackPlugin({
+            inject: false,
+            hash: true,
+            template: './src/about.html',
+            filename: 'about.html'
         }),
         new WebpackMd5Hash()
     ]

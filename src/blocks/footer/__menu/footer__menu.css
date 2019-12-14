@@ -14,3 +14,24 @@
     list-style-type: none;
     padding: 0;
 }
+
+@media only screen and (max-width : 768px){
+    .footer__menu {
+        min-width: 60%;
+        display: flex;
+        flex-flow: column;
+        align-items: flex-start;
+        height: 120px;
+        padding-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width : 425px){
+    .footer__menu  {
+        display: flex;
+        flex-flow: column;
+        align-items: flex-start;
+        height: 120px;
+        padding-bottom: 20px;
+    }
+}
