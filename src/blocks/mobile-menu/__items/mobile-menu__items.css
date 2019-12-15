@@ -1,0 +1,9 @@
+.mobile-menu__items {
+    display: flex;
+    flex-flow: column;
+    list-style-type: none;
+    justify-content: space-around;
+    padding-right: 16px;
+    padding-left: 16px;
+    height: 320px;
+}

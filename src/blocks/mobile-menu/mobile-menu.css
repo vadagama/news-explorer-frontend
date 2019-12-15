@@ -1,0 +1,44 @@
+@import url(__item/mobile-menu__item.css);
+@import url(__items/mobile-menu__items.css);
+@import url(__logo/mobile-menu__logo.css);
+@import url(__devider/mobile-menu__devider.css);
+
+.mobile-menu {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top: none;
+    border-radius: 16px;
+    visibility: hidden;
+}
+
+.mobile-menu:before {
+    display: block;
+    content: ' ';
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: .5;
+  }
+
+  .mobile-menu-content {
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #1A1B22;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
