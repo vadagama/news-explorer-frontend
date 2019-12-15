@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="72pt" height="72pt" viewBox="0 0 72 72" version="1.1">
+<g id="surface1">
+<path style="fill:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(81.960784%,82.352941%,83.921569%);stroke-opacity:1;stroke-miterlimit:4;" d="M 79.5 43 C 79.5 63.15625 63.15625 79.5 43 79.5 C 22.84375 79.5 6.5 63.15625 6.5 43 C 6.5 22.84375 22.84375 6.5 43 6.5 C 63.15625 6.5 79.5 22.84375 79.5 43 Z M 79.5 43 " transform="matrix(0.75,0,0,0.75,0,0)"/>
+<path style="fill:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(81.960784%,82.352941%,83.921569%);stroke-opacity:1;stroke-miterlimit:4;" d="M 69 69 L 88.5 88.5 " transform="matrix(0.75,0,0,0.75,0,0)"/>
+<path style="fill:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(81.960784%,82.352941%,83.921569%);stroke-opacity:1;stroke-miterlimit:4;" d="M 58.328125 55.958333 C 54.661458 51.697917 49.229167 49 43.166667 49 C 37.098958 49 31.666667 51.697917 28 55.958333 " transform="matrix(0.75,0,0,0.75,0,0)"/>
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(81.960784%,82.352941%,83.921569%);fill-opacity:1;" d="M 42.75 25.125 C 42.75 25.746094 42.246094 26.25 41.625 26.25 C 41.003906 26.25 40.5 25.746094 40.5 25.125 C 40.5 24.503906 41.003906 24 41.625 24 C 42.246094 24 42.75 24.503906 42.75 25.125 Z M 42.75 25.125 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:rgb(81.960784%,82.352941%,83.921569%);fill-opacity:1;" d="M 24 25.125 C 24 25.746094 23.496094 26.25 22.875 26.25 C 22.253906 26.25 21.75 25.746094 21.75 25.125 C 21.75 24.503906 22.253906 24 22.875 24 C 23.496094 24 24 24.503906 24 25.125 Z M 24 25.125 "/>
+</g>
+</svg>
