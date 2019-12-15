@@ -1,5 +1,7 @@
 @import url(__cards/search-results__cards.css);
 @import url(__title/search-results__title.css);
+@import url(__searching/search-results__searching.css);
+@import url(__spinner/search-results__spinner.css);
 
 .search-results {
     padding-bottom: 80px;

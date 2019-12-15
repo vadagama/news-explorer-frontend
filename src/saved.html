@@ -16,12 +16,12 @@
   <div class="root">
     <header class="header_login">
       <div class="header-menu ">
-        <a href="#" class="header-menu__logo header-menu__logo_light">NewsExplorer</a>
+        <a href="/" class="header-menu__logo header-menu__logo_light">NewsExplorer</a>
         <ul class="header-menu__items">
           <li><a href="/" class="header-menu__item header-menu__item_light">Главная</a></li>
           <li><a href="about.html" class="header-menu__item header-menu__item_light">О проекте</a></li>
           <li><a href="saved.html" class="header-menu__item header-menu__item_light">Сохраненные статьи</a></li>
-          <li><a href="saved.html" class="button button_login-light header-menu__item header-menu__item_light-button">Грета <img src="<%=require ('./images/logout-icon-light.svg') %>" alt="Logout icon"></a></li>
+          <li><a href="saved.html" class="button button_login-light header-menu__item_button-light">Грета <img src="<%=require ('./images/logout-icon-light.svg') %>" alt="Logout icon"></a></li>
           <a href="/"><img class="header-menu__item_menu" src="<%=require ('./images/menu-icon-light.svg') %>"></a>
         </ul>
       </div>
@@ -101,19 +101,19 @@
       <!-- # Footer section -->
 
       <footer class="footer">
-        <span class="footer__copyrights">© 2019 Supersite</span>
-        <ul class="footer__menu">
-          <li><a class="footer__menu-item" href="#">Главная</a></li>
-          <li><a class="footer__menu-item" href="#">О проекте</a></li>
-          <li><a class="footer__menu-item" href="#">Яндекс.Практикум</a></li>
-        </ul>
-        <div class="social-section">
-          <a href="#" class="social-section__github"><img src="<%=require ('./images/github-icon.svg') %>"
-              alt="github"></a>
-          <a href="#" class="social-section__facebook"><img src="<%=require ('./images/fb-icon.svg') %>"
-              alt="facebook"></a>
-        </div>
-      </footer>
+          <span class="footer__copyrights">© 2019 Supersite</span>
+          <ul class="footer__menu">
+            <li><a class="footer__menu-item" href="/">Главная</a></li>
+            <li><a class="footer__menu-item" href="about.html">О проекте</a></li>
+            <li><a class="footer__menu-item" href="https://praktikum.yandex.ru/" target="_blank" >Яндекс.Практикум</a></li>
+          </ul>
+          <div class="social-section">
+            <a href="https://github.com/vadagama"  target="_blank" class="social-section__github"><img src="<%=require ('./images/github-icon.svg') %>"
+                alt="github"></a>
+            <a href="https://www.facebook.com/oleg.krasnov.9" target="_blank"  class="social-section__facebook"><img src="<%=require ('./images/fb-icon.svg') %>"
+                alt="facebook"></a>
+          </div>
+        </footer>
 
     </div>
     <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>

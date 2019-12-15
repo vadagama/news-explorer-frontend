@@ -6,12 +6,15 @@
     border: solid #fff 1px;
     border-radius: 100px;
     padding: 12px;
+    margin-right: 0em;
 }
 
 .button_login-light {
     border: solid #1A1B22 1px;
     border-radius: 100px;
     padding: 12px;
+    color: #1A1B22;
+    margin-right: 0em;
 }
 
 .button_more-cards {

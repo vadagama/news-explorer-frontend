@@ -16,12 +16,12 @@
   <div class="root">
     <header class="header_about">
       <div class="header-menu ">
-        <a href="#" class="header-menu__logo header-menu__logo_light">NewsExplorer</a>
+        <a href="/" class="header-menu__logo header-menu__logo_light">NewsExplorer</a>
         <ul class="header-menu__items">
           <li><a href="/" class="header-menu__item header-menu__item_light">Главная</a></li>
           <li><a href="about.html" class="header-menu__item header-menu__item_light">О проекте</a></li>
           <li><a href="saved.html" class="header-menu__item header-menu__item_light">Сохраненные статьи</a></li>
-          <li><a href="saved.html" class="button button_login-light header-menu__item header-menu__item_light-button">Грета <img src="<%=require ('./images/logout-icon-light.svg') %>" alt="Logout icon"></a></li>
+          li><a href="saved.html" class="button button_login-light header-menu__item_button-light">Грета <img src="<%=require ('./images/logout-icon-light.svg') %>" alt="Logout icon"></a></li>
           <a href="/"><img class="header-menu__item_menu" src="<%=require ('./images/menu-icon-light.svg') %>"></a>
         </ul>
       </div>
@@ -31,100 +31,75 @@
     <!-- # Search results section -->
 
     <div class="clients">
-        <h1 class="clients__title">Грета, у вас 5 сохранённых статей</h1>
-        <p class="clients__content">Этот сайт — дипломный проект студента Яндекс.Практикума. Его цель — показать, чему научился студент, какими технологиями владеет.</p>
+      <h1 class="clients__title">Грета, у вас 5 сохранённых статей</h1>
+      <p class="clients__content">Этот сайт — дипломный проект студента Яндекс.Практикума. Его цель — показать, чему
+        научился студент, какими технологиями владеет.</p>
 
-        <p class="clients__content">Вёрстка сайта выполнена по методологии БЭМ. Это делает сайт гибким и масштабируемым. Кроме того, добавлять новые страницы и функциональность проще и быстрее, чем в проектах, выполненных по другим методологиям. Также сайт проще и дешевле поддерживать.</p>
-            
-            <p class="clients__content">Студент самостоятельно написал серверный код. В нём реализована функциональность регистрации и входа в систему. Сайт позволяет искать новости за прошедшую неделю и сохранять понравившиеся в личном кабинете. На сервере избранные новости хранятся в базе данных Mongo DB. Студент запрограммировал надёжный сервер: отказоустойчивый и безопасный.</p>
-            
-            <p class="clients__content">При создании проекта была использована сборка технологией Webpack. Это современный подход к разработке сайтов. Код оптимизируется, а значит, сайт работает быстрее. Также сайт работает в старых браузерах. Даже если посетители — пользователи старых операционных систем, у них не будет проблем с отображением. А значит, потенциальная аудитория возрастает.</p>
-            
-            <p class="clients__content">Проект был проверен экспертами Яндекс.Практикума. Если вашему бизнесу нужен сайт, мы рекомендуем обратиться к этому студенту.</p>
-      </div>
+      <p class="clients__content">Вёрстка сайта выполнена по методологии БЭМ. Это делает сайт гибким и масштабируемым.
+        Кроме того, добавлять новые страницы и функциональность проще и быстрее, чем в проектах, выполненных по другим
+        методологиям. Также сайт проще и дешевле поддерживать.</p>
 
-    <div class="search-results">
-      <div class="search-results__cards">
-        <div class="card">
-          <div class="card__image">
-            <a class="card__delete" href="/"></a>
-          </div>
-          <div class="card__bottom-section">
-            <div class="card__date">2 августа, 2019</div>
-            <div class="card__title">Национальное достояние – парки</div>
-            <div class="card__content">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
-              складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к
-              природе.</div>
-            <div class="card__source">Лента.ру</div>
-          </div>
-        </div>
+      <p class="clients__content">Студент самостоятельно написал серверный код. В нём реализована функциональность
+        регистрации и входа в систему. Сайт позволяет искать новости за прошедшую неделю и сохранять понравившиеся в
+        личном кабинете. На сервере избранные новости хранятся в базе данных Mongo DB. Студент запрограммировал надёжный
+        сервер: отказоустойчивый и безопасный.</p>
 
-        <div class="card">
-          <div class="card__image">
-            <a class="card__login-label" href="/">Войдите, чтобы сохранять статьи</a>
-            <a class="card__delete_marked" href="/"></a>
-          </div>
-          <div class="card__bottom-section">
-            <div class="card__date">2 августа, 2019</div>
-            <div class="card__title">Национальное достояние – парки</div>
-            <div class="card__content">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
-              складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к
-              природе.</div>
-            <div class="card__source">Лента.ру</div>
-          </div>
-        </div>
-        
-        <div class="card">
-          <div class="card__image">
-            <a class="card__delete" href="/"></a>
-          </div>
-          <div class="card__bottom-section">
-            <div class="card__date">2 августа, 2019</div>
-            <div class="card__title">Национальное достояние – парки</div>
-            <div class="card__content">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
-              складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к
-              природе.</div>
-            <div class="card__source">Лента.ру</div>
-          </div>
-        </div>
+      <p class="clients__content">При создании проекта была использована сборка технологией Webpack. Это современный
+        подход к разработке сайтов. Код оптимизируется, а значит, сайт работает быстрее. Также сайт работает в старых
+        браузерах. Даже если посетители — пользователи старых операционных систем, у них не будет проблем с
+        отображением. А значит, потенциальная аудитория возрастает.</p>
 
-        <div class="card">
-          <div class="card__image">
-            <a class="card__delete" href="/"></a>
-          </div>
-          <div class="card__bottom-section">
-            <div class="card__date">2 августа, 2019</div>
-            <div class="card__title">Национальное достояние – парки</div>
-            <div class="card__content">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
-              складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к
-              природе.</div>
-            <div class="card__source">Лента.ру</div>
-          </div>
-        </div>
-        </div>
-        <button class="button button_more-cards">Показать еще</button>
-
-      </div>
-
-      <!-- # Footer section -->
-
-      <footer class="footer">
-        <span class="footer__copyrights">© 2019 Supersite</span>
-        <ul class="footer__menu">
-          <li><a class="footer__menu-item" href="#">Главная</a></li>
-          <li><a class="footer__menu-item" href="#">О проекте</a></li>
-          <li><a class="footer__menu-item" href="#">Яндекс.Практикум</a></li>
-        </ul>
-        <div class="social-section">
-          <a href="#" class="social-section__github"><img src="<%=require ('./images/github-icon.svg') %>"
-              alt="github"></a>
-          <a href="#" class="social-section__facebook"><img src="<%=require ('./images/fb-icon.svg') %>"
-              alt="facebook"></a>
-        </div>
-      </footer>
-
+      <p class="clients__content">Проект был проверен экспертами Яндекс.Практикума. Если вашему бизнесу нужен сайт, мы
+        рекомендуем обратиться к этому студенту.</p>
     </div>
-    <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+
+    <!-- # Technologies section -->
+
+    <div class="technologies">
+      <h1 class="technologies__title">Используемые технологии</h1>
+      <div class="technologies__items-container">
+        <div class="technologies__column">
+          <div class="technologies__item">
+            <p class="technologies-item__description">HTML</p>
+            <img class="technologies-item__image" src="<%=require ('./images/html.png') %>" alt="HTML">
+          </div>
+          <div class="technologies__item">
+            <p class="technologies-item__description">CSS</p>
+            <img class="technologies-item__image" src="<%=require ('./images/css.png') %>" alt="CSS">
+          </div>
+        </div>
+        <div class="technologies__column">
+        <div class="technologies__item">
+          <p class="technologies-item__description">Java Script</p>
+          <img class="technologies-item__image" src="<%=require ('./images/js.png') %>" alt="Java Script">
+        </div>
+        <div class="technologies__item">
+          <p class="technologies-item__description">Webpack</p>
+          <img class="technologies-item__image" src="<%=require ('./images/webpack.png') %>" alt="Webpack">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- # Footer section -->
+
+  <footer class="footer">
+    <span class="footer__copyrights">© 2019 Supersite</span>
+    <ul class="footer__menu">
+      <li><a class="footer__menu-item" href="/">Главная</a></li>
+      <li><a class="footer__menu-item" href="about.html">О проекте</a></li>
+      <li><a class="footer__menu-item" href="https://praktikum.yandex.ru/" target="_blank">Яндекс.Практикум</a></li>
+    </ul>
+    <div class="social-section">
+      <a href="https://github.com/vadagama" target="_blank" class="social-section__github"><img
+          src="<%=require ('./images/github-icon.svg') %>" alt="github"></a>
+      <a href="https://www.facebook.com/oleg.krasnov.9" target="_blank" class="social-section__facebook"><img
+          src="<%=require ('./images/fb-icon.svg') %>" alt="facebook"></a>
+    </div>
+  </footer>
+
+  </div>
+  <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
 </body>
 
 </html>

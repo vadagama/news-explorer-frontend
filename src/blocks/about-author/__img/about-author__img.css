@@ -3,6 +3,7 @@
     height: 60%;
     width: 60%;
     min-width: 216px;
+    max-width: 464px;
 }
 
 @media only screen and (min-width : 426px) and (max-width : 768px) {

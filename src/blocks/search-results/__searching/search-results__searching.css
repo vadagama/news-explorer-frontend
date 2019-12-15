@@ -1,0 +1,8 @@
+@import url(__title/searching__title.css);
+@import url(__description/searching__description.css);
+@import url(__img/searching__img.css);
+
+.search-results__searching {
+    text-align: center;
+    margin-top: 86px;
+}

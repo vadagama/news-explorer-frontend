@@ -1,0 +1,12 @@
+.technologies__column {
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    justify-content: space-around;
+}
+
+@media only screen and (max-width : 650px){
+    .technologies__column {
+        flex-flow: column;
+    }
+}
