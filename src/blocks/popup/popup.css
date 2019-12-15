@@ -8,7 +8,7 @@
 }
 
 .popup_login {
-  visibility: visible;
+  visibility: hidden;
 }
 
 .popup_registration {
