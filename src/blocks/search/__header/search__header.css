@@ -1,6 +1,6 @@
 .search__header {
     padding-top: 60px;
-    font-family: Roboto Slab;
+    font-family: Roboto Slab, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: normal;
     font-size: 60px;
@@ -9,7 +9,7 @@
 
 .search__header_done {
     color: #1A1B22;
-    font-family: Roboto Slab;
+    font-family: Roboto Slab, "Times New Roman", Times, serif;
     font-style: normal;
     font-weight: normal;
     font-size: 40px;
@@ -18,7 +18,7 @@
 
 @media only screen and (max-width : 425px) {
     .search__header {
-        font-family: Roboto Slab;
+        font-family: Roboto Slab, "Times New Roman", Times, serif;
         font-style: normal;
         font-weight: normal;
         font-size: 36px;

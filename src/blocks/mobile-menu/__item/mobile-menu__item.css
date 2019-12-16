@@ -1,7 +1,7 @@
 .mobile-menu__item {
     color: #ffffff;
     text-decoration: none;
-    font-family: Roboto;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -16,7 +16,7 @@
     justify-content: center;
     color: #ffffff;
     text-decoration: none;
-    font-family: Roboto;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -30,7 +30,7 @@
 .mobile-menu__item_button-light {
     color: #1A1B22;
     text-decoration: none;
-    font-family: Roboto;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -42,7 +42,7 @@
     margin-left: 0px;
     color: #ffffff;
     text-decoration: none;
-    font-family: Roboto;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
