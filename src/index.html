@@ -39,10 +39,10 @@
           <h1 class="form__header">Вход</h1>
           <span class="form__input-label">Email</span>
           <input class="form__input" type="text" name="username" placeholder="Введите email" />
-          <label class="form__input-error" for="username">Неправильный формат email</label>
+          <label class="form__input-error">Неправильный формат email</label>
           <span class="form__input-label">Пароль</span>
           <input class="form__input" type="password" name="password" placeholder="Введите пароль" />
-          <label class="form__input-error" for="password">Неправильный формат пароля</label>
+          <label class="form__input-error">Неправильный формат пароля</label>
           <button class="form__button" type="submit" value="Login" name="button">Войти</button>
           <span class="form__another-action-label">или <a class="form__another-action"
               href="index.html">Зарегистрироваться</a></span>
@@ -59,14 +59,14 @@
           <h1 class="form__header">Регистрация</h1>
           <span class="form__input-label">Email</span>
           <input class="form__input" type="text" name="username" placeholder="Введите email" />
-          <label class="form__input-error" for="username">Неправильный формат email</label>
+          <label class="form__input-error">Неправильный формат email</label>
           <span class="form__input-label">Пароль</span>
           <input class="form__input" type="password" name="password" placeholder="Введите пароль" />
-          <label class="form__input-error" for="password">Неправильный формат пароля</label>
+          <label class="form__input-error">Неправильный формат пароля</label>
           <span class="form__input-label">Имя</span>
           <input class="form__input" type="password" name="password" placeholder="Введите свое имя" />
-          <label class="form__input-error" for="password">Неправильный формат имени</label>
-          <label class="form__input-error form__input-error_button" for="button">Неправильный формат имени</label>
+          <label class="form__input-error">Неправильный формат имени</label>
+          <label class="form__input-error form__input-error_button">Неправильный формат имени</label>
           <button class="form__button form__button_disable" type="submit" value="Login" name="button">Войти</button>
           <span class="form__another-action-label">или <a class="form__another-action"
               href="index.html">Зарегистрироваться</a></span>
@@ -104,7 +104,7 @@
         <h1 class="search__header">Что в мире творится?</h1>
         <p class="search__content">Находите самые свежие статьи на любую тему и сохраняйте в своём личном кабинете.</p>
         <div class="search-field">
-          <input class="search-field__input" placeholder="Введите тему новости"></input>
+          <input class="search-field__input" placeholder="Введите тему новости"/>
           <button class="search-field__button">Искать</button>
         </div>
       </div>
@@ -217,7 +217,6 @@
             src="<%=require ('./images/fb-icon.svg') %>" alt="facebook"></a>
       </div>
     </footer>
-  </div>
   </div>
   <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
 </body>
