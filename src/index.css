@@ -17,6 +17,7 @@
 @import url(blocks/technologies/technologies.css);
 @import url(blocks/technologies-item/technologies-item.css);
 @import url(blocks/mobile-menu/mobile-menu.css);
+@import url(blocks/history/history.css);
 
 body {
   background-color: #fff;
