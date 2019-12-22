@@ -1,5 +1,10 @@
+@import url(_light/header-menu__item_light.css);
+@import url(_menu/header-menu__item_menu.css);
+@import url(_main/header-menu__item_main.css);
+@import url(_curent/header-menu__item_curent.css);
+@import url(_curent-light/header-menu__item_curent-light.css);
+
 .header-menu__item {
-    color: #ffffff;
     text-decoration: none;
     font-family: Roboto, Arial, Helvetica, sans-serif;
     font-style: normal;
@@ -8,74 +13,6 @@
     line-height: 24px;
     text-align: center;
     margin-right: 1.5em;
-}
-
-.header-menu__item_light {
-    color: #1A1B22;
-}
-
-.header-menu__item:hover{
-    border: solid;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-width: 3px;
-    padding-bottom: 28px;
-    border-spacing: 20px;
-}
-
-.header-menu__item_light:hover {
-    border: solid;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-width: 3px;
-    padding-bottom: 28px;
-    border-spacing: 20px;
-}
-
-.header-menu__item_button {
-    color: #ffffff;
-    text-decoration: none;
-    font-family: Roboto, Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 24px;
-    text-align: center;
-}
-
-.header-menu__item_button-light {
-    color: #1A1B22;
-    text-decoration: none;
-    font-family: Roboto, Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 24px;
-    text-align: center;
-}
-
-.header-menu__item_menu {
-    margin-left: 0px;
-    color: #ffffff;
-    text-decoration: none;
-    font-family: Roboto, Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 24px;
-    text-align: center;
-    visibility: hidden;
-    width: 0px;
-}
-
-@media only screen and (max-width : 768px){
-    .header-menu__item_menu {
-        visibility: visible;
-        margin-left: 16px;
-        width: 24px;
-    }
 }
 
 @media only screen and (max-width : 850px){

@@ -1,0 +1,15 @@
+.button_login-light {
+    border: solid #1A1B22 1px;
+    border-radius: 100px;
+    padding: 12px;
+    color: #1A1B22;
+    margin-right: 0em;
+    color: #1A1B22;
+    text-decoration: none;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+}

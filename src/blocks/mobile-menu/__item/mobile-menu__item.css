@@ -1,3 +1,9 @@
+@import url(_menu/mobile-menu__item_menu.css);
+@import url(_menu-close/mobile-menu__item_menu-close.css);
+@import url(_light/mobile-menu__item_light.css);
+@import url(_button/mobile-menu__item_button.css);
+@import url(_button-light/mobile-menu__item_button-light.css);
+
 .mobile-menu__item {
     color: #ffffff;
     text-decoration: none;
@@ -5,55 +11,4 @@
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
-}
-
-.mobile-menu__item_light {
-    color: #1A1B22;
-}
-
-.mobile-menu__item_button {
-    display: flex;
-    justify-content: center;
-    color: #ffffff;
-    text-decoration: none;
-    font-family: Roboto, Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    text-align: center;
-    border: solid #fff 1px;
-    border-radius: 100px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-}
-
-.mobile-menu__item_button-light {
-    color: #1A1B22;
-    text-decoration: none;
-    font-family: Roboto, Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 24px;
-    text-align: center;
-}
-
-.mobile-menu__item_menu {
-    margin-left: 0px;
-    color: #ffffff;
-    text-decoration: none;
-    font-family: Roboto, Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 24px;
-    text-align: center;
-    visibility: hidden;
-    width: 0px;
-}
-.mobile-menu__item_menu-close {
-    position: absolute;
-    top: 16px;
-    right: 16px;
-    color: #ffffff;
 }

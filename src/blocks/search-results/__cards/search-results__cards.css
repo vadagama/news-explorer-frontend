@@ -1,11 +1,7 @@
+@import url(_done/search-results__cards_done.css);
+
 .search-results__cards {
     padding-top: 64px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 16px;
-}
-
-.search-results__cards_done {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 16px;

@@ -1,0 +1,10 @@
+.header-menu__item_curent{
+    border: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-width: 3px;
+    padding-bottom: 28px;
+    border-spacing: 20px;
+    color: #ffffff;
+}

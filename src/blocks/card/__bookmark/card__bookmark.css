@@ -1,3 +1,5 @@
+@import url(_marked/card__bookmark_marked.css);
+
 .card__bookmark {
     position: absolute;
     top: 24px;
@@ -21,20 +23,6 @@
     background: #FFFFFF;
     border-radius: 8px;
     background-image: url(../../../images/bookmark-icon-hover.svg);
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: center;
-}
-
-.card__bookmark_marked {
-    position: absolute;
-    top: 24px;
-    right: 24px;
-    width: 40px;
-    height: 40px;
-    background: #FFFFFF;
-    border-radius: 8px;
-    background-image: url(../../../images/bookmark-icon-marked.svg);
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: center;

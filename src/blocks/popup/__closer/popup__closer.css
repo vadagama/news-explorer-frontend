@@ -1,0 +1,9 @@
+.popup__closer {
+    position: absolute;
+    top: -45px;
+    right: -45px;
+    display: block;
+    line-height: 20px;
+    text-align: center;
+    cursor: pointer;
+  }

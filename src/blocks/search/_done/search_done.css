@@ -1,0 +1,22 @@
+.search.search_done {
+    text-align: left;
+    max-width: 608px;
+    padding-left: 104px;
+    padding-top: 40px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+@media only screen and (min-width : 426px) and (max-width : 768px) {
+    .search.search_done {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media only screen and (max-width : 425px){
+    .search.search_done {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}

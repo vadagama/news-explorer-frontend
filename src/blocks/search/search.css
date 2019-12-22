@@ -2,6 +2,7 @@
 @import url(__header/search__header.css);
 @import url(__tag-list/search__tag-list.css);
 @import url(__pre-header/search__pre-header.css);
+@import url(_done/search_done.css);
 
 .search {
     text-align: left;
@@ -10,13 +11,6 @@
     margin-right: auto;
 }
 
-.search_done {
-    text-align: left;
-    max-width: 608px;
-    padding-left: 104px;
-    padding-top: 40px;
-}
-
 @media only screen and (min-width : 426px) and (max-width : 768px) {
     .search {
         padding-left: 40px;
@@ -26,20 +20,6 @@
 
 @media only screen and (max-width : 425px){
     .search {
-        padding-left: 16px;
-        padding-right: 16px;
-    }
-}
-
-@media only screen and (min-width : 426px) and (max-width : 768px) {
-    .search_done {
-        padding-left: 40px;
-        padding-right: 40px;
-    }
-}
-
-@media only screen and (max-width : 425px){
-    .search_done {
         padding-left: 16px;
         padding-right: 16px;
     }

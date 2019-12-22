@@ -1,3 +1,5 @@
+@import url(_button/form__input-error_button.css);
+
 .form__input-error {
     font-family: Inter, Arial, Helvetica, sans-serif;
     font-style: normal;
@@ -5,8 +7,4 @@
     font-size: 12px;
     line-height: 15px;
     color: #FF0000;
-}
-
-.form__input-error_button {
-    padding-top: 20px;
 }

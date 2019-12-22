@@ -1,0 +1,15 @@
+.mobile-menu__item_button {
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    border: solid #fff 1px;
+    border-radius: 100px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}

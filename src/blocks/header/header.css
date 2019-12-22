@@ -1,24 +1,8 @@
+@import url(_login/header_login.css);
+@import url(_about/header_about.css);
+@import url(_main/header_main.css);
+
 .header {
-background: url(../../images/background-with-phone.jpg) no-repeat;
-min-height: 576px;
-color: #fff;
-margin-left: auto;
-margin-right: auto;
-}
-
-.header_login {
-    background-color: #fff;
-    background-image: none;
-color: #fff;
-margin-left: auto;
-margin-right: auto;
-margin-bottom: 56px;
-}
-
-.header_about {
-    background-color: #fff;
-    background-image: none;
-color: #fff;
-margin-left: auto;
-margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
 }

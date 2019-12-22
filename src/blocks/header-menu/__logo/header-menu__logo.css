@@ -1,3 +1,6 @@
+@import url(_light/header__logo_light.css);
+@import url(_main/header__logo_main.css);
+
 .header-menu__logo {
     position: absolute;
     left: 104px;
@@ -6,11 +9,6 @@
     font-weight: bold;
     font-size: 20px;
     text-decoration: none;
-    color: #fff;
-}
-
-.header-menu__logo_light {
-    color: #1A1B22;
 }
 
 @media only screen and (min-width : 426px) and (max-width : 768px) {

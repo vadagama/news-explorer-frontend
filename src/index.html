@@ -17,7 +17,7 @@
 
     <!-- Mobile menu module start -->
     <div class="mobile-menu">
-        <div class="mobile-menu-content">
+        <div class="mobile-menu__content">
             <a href="index.html" class="mobile-menu__logo">NewsExplorer</a>
             <a href="index.html"><img class="mobile-menu__item_menu-close" alt="menu icon" src="<%=require ('./images/close-menu-icon.svg') %>"></a>
             <hr class="mobile-menu__devider">
@@ -25,7 +25,7 @@
               <li><a href="index.html" class="mobile-menu__item">Главная</a></li>
               <li><a href="about.html" class="mobile-menu__item">О проекте</a></li>
               <li><a href="saved.html" class="mobile-menu__item">Сохраненные статьи</a></li>
-              <li><a href="saved.html" class="mobile-menu__item_button">Грета <img src="<%=require ('./images/logout-icon.svg') %>" alt="Logout icon"></a></li>
+              <li><a href="saved.html" class="mobile-menu__button">Грета <img src="<%=require ('./images/logout-icon.svg') %>" alt="Logout icon"></a></li>
             </ul>
           </div>
     </div>
@@ -33,8 +33,8 @@
 
     <!-- Login popup module start -->
     <div class="popup popup_login">
-      <div class="popup-content">
-        <a href="index.html"><img class="popup-closer" alt="close popup" src="<%=require ('./images/close-popup-icon.svg') %>"></a>
+      <div class="popup__content">
+        <a href="index.html"><img class="popup__closer" alt="close popup" src="<%=require ('./images/close-popup-icon.svg') %>"></a>
         <form class="form">
           <h1 class="form__header">Вход</h1>
           <span class="form__input-label">Email</span>
@@ -53,8 +53,8 @@
 
     <!-- Registration popup module start -->
     <div class="popup popup_registration">
-      <div class="popup-content-registration">
-        <a href="index.html"><img class="popup-closer" alt="close popup" src="<%=require ('./images/close-popup-icon.svg') %>"></a>
+      <div class="popup__content_registration">
+        <a href="index.html"><img class="popup__closer" alt="close popup" src="<%=require ('./images/close-popup-icon.svg') %>"></a>
         <form class="form">
           <h1 class="form__header">Регистрация</h1>
           <span class="form__input-label">Email</span>
@@ -77,8 +77,8 @@
 
     <!-- Registration done popup module start -->
     <div class="popup popup_done">
-      <div class="popup-content-done">
-        <a href="index.html"><img class="popup-closer" alt="close popup" src="<%=require ('./images/close-popup-icon.svg') %>"></a>
+      <div class="popup__content popup__content_done">
+        <a href="index.html"><img class="popup__closer" alt="close popup" src="<%=require ('./images/close-popup-icon.svg') %>"></a>
         <form class="form">
           <h1 class="form__header">Пользователь успешно зарегистрирован!</h1>
           <a class="form__link" href="saved.html">Выполнить вход</a>
@@ -89,14 +89,14 @@
 
     <!-- # Header section -->
 
-    <header class="header">
+    <header class="header header_main">
       <div class="header-menu">
-        <a href="index.html" class="header-menu__logo">NewsExplorer</a>
+        <a href="index.html" class="header-menu__logo header-menu__logo_main">NewsExplorer</a>
         <ul class="header-menu__items">
-          <li><a href="index.html" class="header-menu__item">Главная</a></li>
-          <li><a href="about.html" class="header-menu__item">О проекте</a></li>
-          <li><a href="saved.html" class="button button_login header-menu__item_button">Авторизоваться</a></li>
-          <li><a href="index.html"><img class="header-menu__item_menu" alt="menu icon" src="<%=require ('./images/menu-icon.svg') %>"></a></li>
+          <li><a href="index.html" class="header-menu__item header-menu__item_curent">Главная</a></li>
+          <li><a href="about.html" class="header-menu__item header-menu__item_main">О проекте</a></li>
+          <li><a href="saved.html" class="button button_login">Авторизоваться</a></li>
+          <li><a href="index.html"><img class="header-menu__item header-menu__item_menu" alt="menu icon" src="<%=require ('./images/menu-icon.svg') %>"></a></li>
         </ul>
       </div>
       <hr class="header-menu__devider">
@@ -132,7 +132,7 @@
 
         <div class="card">
           <div class="card__image">
-            <a class="card__bookmark_marked" href="index.html"></a>
+            <a class="card__bookmark card__bookmark_marked" href="index.html"></a>
           </div>
           <div class="card__bottom-section">
             <div class="card__date">2 августа, 2019</div>
