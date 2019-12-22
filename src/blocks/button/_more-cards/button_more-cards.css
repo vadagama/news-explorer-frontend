@@ -1,6 +1,6 @@
 .button_more-cards {
+    background: #FFFFFF;
     border: solid #fff 1px;
-    border-radius: 100px;
     padding: 12px;
     outline: none;
     cursor: pointer;
@@ -14,4 +14,8 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 64px;
+}
+
+.button_more-cards:hover {
+    background: #E6E8EB;
 }

@@ -8,8 +8,8 @@
   <meta name="author" content="Oleg Krasnov">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>News explorer</title>
-  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
-  <link rel="shortcut icon" type="image/png" href="<%=require ('../../../../../src/images/css.png %>" />
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.index.css %>" />
+  <link rel="shortcut icon" type="image/png" href="<%=require ('../../images/css.png') %>" />
 </head>
 
 <body>
@@ -19,13 +19,13 @@
     <div class="mobile-menu">
         <div class="mobile-menu__content">
             <a href="index.html" class="mobile-menu__logo">NewsExplorer</a>
-            <a href="index.html"><img class="mobile-menu__item_menu-close" alt="menu icon" src="<%=require ('../../../../../src/images/close-menu-icon.svg') %>"></a>
+            <a href="index.html"><img class="mobile-menu__item_menu-close" alt="menu icon" src="<%=require ('../../images/close-menu-icon.svg') %>"></a>
             <hr class="mobile-menu__devider">
             <ul class="mobile-menu__items">
               <li><a href="index.html" class="mobile-menu__item">Главная</a></li>
               <li><a href="about.html" class="mobile-menu__item">О проекте</a></li>
               <li><a href="saved.html" class="mobile-menu__item">Сохраненные статьи</a></li>
-              <li><a href="saved.html" class="mobile-menu__button">Грета <img src="<%=require ('../../../../../src/images/logout-icon.svg %>" alt="Logout icon"></a></li>
+              <li><a href="saved.html" class="mobile-menu__button">Грета <img src="<%=require ('../../images/logout-icon.svg') %>" alt="Logout icon"></a></li>
             </ul>
           </div>
     </div>
@@ -34,7 +34,7 @@
     <!-- Login popup module start -->
     <div class="popup popup_login">
       <div class="popup__content">
-        <a href="index.html"><img class="popup__closer" alt="close popup" src="<%=require ('../../../../../src/images/close-popup-icon.svg') %>"></a>
+        <a href="index.html"><img class="popup__closer" alt="close popup" src="<%=require ('../../images/close-popup-icon.svg') %>"></a>
         <form class="form">
           <h1 class="form__header">Вход</h1>
           <span class="form__input-label">Email</span>
@@ -54,7 +54,7 @@
     <!-- Registration popup module start -->
     <div class="popup popup_registration">
       <div class="popup__content_registration">
-        <a href="index.html"><img class="popup__closer" alt="close popup" src="<%=require ('../../../../../src/images/close-popup-icon.svg') %>"></a>
+        <a href="index.html"><img class="popup__closer" alt="close popup" src="<%=require ('../../images/close-popup-icon.svg') %>"></a>
         <form class="form">
           <h1 class="form__header">Регистрация</h1>
           <span class="form__input-label">Email</span>
@@ -78,7 +78,7 @@
     <!-- Registration done popup module start -->
     <div class="popup popup_done">
       <div class="popup__content popup__content_done">
-        <a href="index.html"><img class="popup__closer" alt="close popup" src="<%=require ('../../../../../src/images/close-popup-icon.svg') %>"></a>
+        <a href="index.html"><img class="popup__closer" alt="close popup" src="<%=require ('../../images/close-popup-icon.svg') %>"></a>
         <form class="form">
           <h1 class="form__header">Пользователь успешно зарегистрирован!</h1>
           <a class="form__link" href="saved.html">Выполнить вход</a>
@@ -96,7 +96,7 @@
           <li><a href="index.html" class="header-menu__item header-menu__item_curent">Главная</a></li>
           <li><a href="about.html" class="header-menu__item header-menu__item_main">О проекте</a></li>
           <li><a href="saved.html" class="button button_login">Авторизоваться</a></li>
-          <li><a href="index.html"><img class="header-menu__item header-menu__item_menu" alt="menu icon" src="<%=require ('../../../../../src/images/menu-icon.svg') %>"></a></li>
+          <li><a href="index.html"><img class="header-menu__item header-menu__item_menu" alt="menu icon" src="<%=require ('../../images/menu-icon.svg') %>"></a></li>
         </ul>
       </div>
       <hr class="header-menu__devider">
@@ -175,7 +175,7 @@
       <button class="button button_more-cards">Показать еще</button>
 
       <div class="search-results__searching">
-        <img src="<%=require ('./images/not-found-icon.svg') %>" alt="Nothing was found" class="searching__img">
+        <img src="<%=require ('../../images/not-found-icon.svg') %>" alt="Nothing was found" class="searching__img">
         <p class="searching__title">Ничего не найдено</p>
         <p class="searching__description">К сожалению по вашему запросу
           ничего не найдено.</p>
@@ -189,7 +189,7 @@
     <!-- # About author section -->
 
     <div class="about-author">
-      <img src="<%=require ('../../../../../src/images/about-author.png') %>" alt="about author" class="about-author__img">
+      <img src="<%=require ('../../images/about-author.png') %>" alt="about author" class="about-author__img">
       <div class="about-author__block">
         <h1 class="about-author__header">Об авторе</h1>
         <p class="about-author__text">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем
@@ -212,13 +212,14 @@
       </ul>
       <div class="social-section">
         <a href="https://github.com/vadagama" target="_blank" class="social-section__github"><img
-            src="<%=require ('./images/github-icon.svg') %>" alt="github"></a>
+            src="<%=require ('../../images/github-icon.svg') %>" alt="github"></a>
         <a href="https://www.facebook.com/oleg.krasnov.9" target="_blank" class="social-section__facebook"><img
-            src="<%=require ('./images/fb-icon.svg') %>" alt="facebook"></a>
+            src="<%=require ('../../images/fb-icon.svg') %>" alt="facebook"></a>
       </div>
     </footer>
   </div>
-  <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+  <script src="<%= htmlWebpackPlugin.files.chunks.index.entry %>"></script>
+
 </body>
 
 </html>
