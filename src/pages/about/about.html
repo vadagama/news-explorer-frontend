@@ -106,7 +106,24 @@
         <a class="history__link" href="https://github.com/vadagama"><span>Открыть в Github <img class="technologies-item__image"
             src="<%=require ('../../images/arrow-icon.svg') %>" alt="arrow"></span></a>
       </div>
-    </section>
+      <div class="commits__slider glide__track" data-glide-el="track">
+          <ul class="commits__list glide__slides">
+            <li class="commits__list-item commit glide__slide">
+
+              <p class="commit__date"><time datetime="2019-08-02 19:00">2 августа, 2019</time></p>
+
+              <img class="commit__ava" src="<%=require('../../images/fedorova.jpg')%>" width="48" height="48"  alt="Commit author photo">
+
+              <div class="commit__author">
+                <p class="commit__author-name">Мария Фёдорова</p>
+                <address><a href="" class="commit__author-link">mariiifed@yandex.ru</a></address>
+              </div>
+
+              <cite class="commit__text">You can install this plugin directly from NetBeans Plugin Portal: in NetBeans, open   Tools >
+                  Plugins > Available plugins   and find and install Emmet plugin.</cite>
+            </li>
+          </ul>
+        </div>
 
     <!-- # Footer section -->
 

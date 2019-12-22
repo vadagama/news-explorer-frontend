@@ -1,0 +1,18 @@
+/* styles */
+
+.commit__author {
+	padding-left: 12px;
+    padding-top: 7px;
+}
+
+@media (min-width: 768px) {
+	.commit__author {
+		padding-top: 16px;
+	}
+}
+
+@media (min-width: 1204px) {
+	.commit__author {
+		padding-top: 20px;
+	}
+}

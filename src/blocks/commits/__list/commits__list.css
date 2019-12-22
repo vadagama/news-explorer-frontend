@@ -1,0 +1,23 @@
+.commits__list {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+
+	margin: 0;
+	margin-bottom: 12px;
+	padding: 0;
+
+	list-style: none;
+}
+
+@media (min-width: 768px) {
+	.commits__list {
+		margin-bottom: 28px;
+	}
+}
+
+@media (min-width: 1204px) {
+	.commits__list {
+		margin-bottom: 44px;
+	} 
+}

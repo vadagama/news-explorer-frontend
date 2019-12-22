@@ -13,14 +13,14 @@
     flex-flow: wrap;
 }
 
-@media only screen and (min-width : 426px) and (max-width : 768px) {
+@media only screen and (min-width : 500px) and (max-width : 768px) {
     .history  {
         padding-left: 40px;
         padding-right: 40px;
     }
 }
 
-@media only screen and (max-width : 425px){
+@media only screen and (max-width : 500px){
     .history  {
         padding-left: 16px;
         padding-right: 16px;

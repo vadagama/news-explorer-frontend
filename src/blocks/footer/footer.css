@@ -3,24 +3,13 @@
 @import url(__menu/footer__menu.css);
 
 .footer {
-    padding-left: 104px;
-    padding-right: 104px;
     display: flex;
     flex: 2 0px;
     align-items: center;
 }
 
-@media only screen and (min-width : 769px) and (max-width : 1024px) {
-    .footer  {
-        padding-left: 60px;
-        padding-right: 60px;
-    }
-}
-
 @media only screen and (min-width : 426px) and (max-width : 768px) {
     .footer  {
-        padding-left: 40px;
-        padding-right: 40px;
         display: flex;
         flex-flow: column-reverse;
         align-items: flex-start;
@@ -30,8 +19,6 @@
 
 @media only screen and (max-width : 425px){
     .footer  {
-        padding-left: 16px;
-        padding-right: 16px;
         display: flex;
         flex-flow: column-reverse;
         align-items: flex-start;
