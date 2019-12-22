@@ -11,14 +11,17 @@ new webpack.DefinePlugin({
 });
 
 module.exports = {
-    entry: { main: './src/index.js'},
+    entry: {
+        index: './src/pages/index/index.js',
+        saved: './src/pages/saved/saved.js',
+        about: './src/pages/about/about.js'
+    },
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: '[name].[chunkhash].js'
     },
     module: {
-        rules: [
-            {
+        rules: [{
                 test: /\.js$/,
                 exclude: /node_modules/,
                 use: {
@@ -27,60 +30,57 @@ module.exports = {
             },
             {
                 test: /\.css$/,
-                use:  [
+                use: [
                     (isDev ? 'style-loader' : MiniCssExtractPlugin.loader),
-                    'css-loader', 
+                    'css-loader',
                     'postcss-loader'
                 ] // добавили минификацию CSS
             },
             {
                 test: /images[\\\/].+\.(gif|png|jpe?g|svg)$/i,
                 use: {
-                  loader: 'file-loader',
-                  options: {
-                    name: 'images/[name][hash].[ext]'
-                  }
+                    loader: 'file-loader',
+                    options: {
+                        name: 'images/[name][hash].[ext]'
+                    }
                 },
-              }, {
+            }, {
                 test: /fonts[\\\/].+\.(eot|svg|ttf|woff|woff2)$/,
                 use: {
-                  loader: 'file-loader',
-                  options: {
-                    name: 'fonts/[name][hash].[ext]'
-                  }
+                    loader: 'file-loader',
+                    options: {
+                        name: 'fonts/[name][hash].[ext]'
+                    }
                 },
-              }
+            }
         ]
     },
     plugins: [
         new MiniCssExtractPlugin({ // 
             filename: 'style.[contenthash].css',
         }),
-        new OptimizeCssAssetsPlugin({
-            assetNameRegExp: /\.css$/g,
-            cssProcessor: require('cssnano'),
-            cssProcessorPluginOptions: {
-                    preset: ['default'],
-            },
-            canPrint: true
-       }),
-       new HtmlWebpackPlugin({
-        inject: false,
-        hash: true,
-        template: './src/index.html',
-        filename: 'index.html'
-    }),
         new HtmlWebpackPlugin({
             inject: false,
-            hash: true,
-            template: './src/saved.html',
+            template: './src/pages/index/index.html',
+            filename: 'index.html'
+        }),
+        new HtmlWebpackPlugin({
+            inject: false,
+            template: './src/pages/saved/saved.html',
             filename: 'saved.html'
         }),
         new HtmlWebpackPlugin({
             inject: false,
-            hash: true,
-            template: './src/about.html',
+            template: './src/pages/about/about.html',
             filename: 'about.html'
+        }),
+        new OptimizeCssAssetsPlugin({
+            assetNameRegExp: /\.css$/g,
+            cssProcessor: require('cssnano'),
+            cssProcessorPluginOptions: {
+                preset: ['default'],
+            },
+            canPrint: true
         }),
         new WebpackMd5Hash()
     ]

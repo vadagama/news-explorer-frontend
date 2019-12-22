@@ -8,8 +8,8 @@
   <meta name="author" content="Oleg Krasnov">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>News explorer</title>
-  <link rel="stylesheet" href="style.6f8eb6cd4631b6dc3183.css?5e11d92697a36dac329d">
-  <link rel="shortcut icon" type="image/png" href="images/favicon630d526173bef801387666afaff89d1c.png" />
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
+  <link rel="shortcut icon" type="image/png" href="<%=require ('../../../../../src/images/css.png %>" />
 </head>
 
 <body>
@@ -17,15 +17,15 @@
 
     <!-- Mobile menu module start -->
     <div class="mobile-menu">
-        <div class="mobile-menu-content">
+        <div class="mobile-menu__content">
             <a href="index.html" class="mobile-menu__logo">NewsExplorer</a>
-            <a href="index.html"><img class="mobile-menu__item_menu-close" alt="menu icon" src="images/close-menu-icon700950e217fda93b4de3b68d51eb4ac7.svg"></a>
+            <a href="index.html"><img class="mobile-menu__item_menu-close" alt="menu icon" src="<%=require ('../../../../../src/images/close-menu-icon.svg') %>"></a>
             <hr class="mobile-menu__devider">
             <ul class="mobile-menu__items">
               <li><a href="index.html" class="mobile-menu__item">Главная</a></li>
               <li><a href="about.html" class="mobile-menu__item">О проекте</a></li>
               <li><a href="saved.html" class="mobile-menu__item">Сохраненные статьи</a></li>
-              <li><a href="saved.html" class="mobile-menu__item_button">Грета <img src="images/logout-icon6e3ef1cf54054874c190850e61f4fc5b.svg" alt="Logout icon"></a></li>
+              <li><a href="saved.html" class="mobile-menu__button">Грета <img src="<%=require ('../../../../../src/images/logout-icon.svg %>" alt="Logout icon"></a></li>
             </ul>
           </div>
     </div>
@@ -33,8 +33,8 @@
 
     <!-- Login popup module start -->
     <div class="popup popup_login">
-      <div class="popup-content">
-        <a href="index.html"><img class="popup-closer" alt="close popup" src="images/close-popup-icon0c3c0df47191089b257de1a5d7800193.svg"></a>
+      <div class="popup__content">
+        <a href="index.html"><img class="popup__closer" alt="close popup" src="<%=require ('../../../../../src/images/close-popup-icon.svg') %>"></a>
         <form class="form">
           <h1 class="form__header">Вход</h1>
           <span class="form__input-label">Email</span>
@@ -53,8 +53,8 @@
 
     <!-- Registration popup module start -->
     <div class="popup popup_registration">
-      <div class="popup-content-registration">
-        <a href="index.html"><img class="popup-closer" alt="close popup" src="images/close-popup-icon0c3c0df47191089b257de1a5d7800193.svg"></a>
+      <div class="popup__content_registration">
+        <a href="index.html"><img class="popup__closer" alt="close popup" src="<%=require ('../../../../../src/images/close-popup-icon.svg') %>"></a>
         <form class="form">
           <h1 class="form__header">Регистрация</h1>
           <span class="form__input-label">Email</span>
@@ -77,8 +77,8 @@
 
     <!-- Registration done popup module start -->
     <div class="popup popup_done">
-      <div class="popup-content-done">
-        <a href="index.html"><img class="popup-closer" alt="close popup" src="images/close-popup-icon0c3c0df47191089b257de1a5d7800193.svg"></a>
+      <div class="popup__content popup__content_done">
+        <a href="index.html"><img class="popup__closer" alt="close popup" src="<%=require ('../../../../../src/images/close-popup-icon.svg') %>"></a>
         <form class="form">
           <h1 class="form__header">Пользователь успешно зарегистрирован!</h1>
           <a class="form__link" href="saved.html">Выполнить вход</a>
@@ -91,12 +91,12 @@
 
     <header class="header header_main">
       <div class="header-menu">
-        <a href="index.html" class="header-menu__logo">NewsExplorer</a>
+        <a href="index.html" class="header-menu__logo header-menu__logo_main">NewsExplorer</a>
         <ul class="header-menu__items">
-          <li><a href="index.html" class="header-menu__item">Главная</a></li>
-          <li><a href="about.html" class="header-menu__item">О проекте</a></li>
-          <li><a href="saved.html" class="button button_login header-menu__item_button">Авторизоваться</a></li>
-          <li><a href="index.html"><img class="header-menu__item_menu" alt="menu icon" src="images/menu-icon48e1c7c5dcdbd0457e84cc1bfe9d746b.svg"></a></li>
+          <li><a href="index.html" class="header-menu__item header-menu__item_curent">Главная</a></li>
+          <li><a href="about.html" class="header-menu__item header-menu__item_main">О проекте</a></li>
+          <li><a href="saved.html" class="button button_login">Авторизоваться</a></li>
+          <li><a href="index.html"><img class="header-menu__item header-menu__item_menu" alt="menu icon" src="<%=require ('../../../../../src/images/menu-icon.svg') %>"></a></li>
         </ul>
       </div>
       <hr class="header-menu__devider">
@@ -132,7 +132,7 @@
 
         <div class="card">
           <div class="card__image">
-            <a class="card__bookmark_marked" href="index.html"></a>
+            <a class="card__bookmark card__bookmark_marked" href="index.html"></a>
           </div>
           <div class="card__bottom-section">
             <div class="card__date">2 августа, 2019</div>
@@ -175,7 +175,7 @@
       <button class="button button_more-cards">Показать еще</button>
 
       <div class="search-results__searching">
-        <img src="images/not-found-icon00513beccdefc46c1621b2b9f8df68ed.svg" alt="Nothing was found" class="searching__img">
+        <img src="<%=require ('./images/not-found-icon.svg') %>" alt="Nothing was found" class="searching__img">
         <p class="searching__title">Ничего не найдено</p>
         <p class="searching__description">К сожалению по вашему запросу
           ничего не найдено.</p>
@@ -189,7 +189,7 @@
     <!-- # About author section -->
 
     <div class="about-author">
-      <img src="images/about-authore4a8fe7853596879b8dcc1aec202a19b.png" alt="about author" class="about-author__img">
+      <img src="<%=require ('../../../../../src/images/about-author.png') %>" alt="about author" class="about-author__img">
       <div class="about-author__block">
         <h1 class="about-author__header">Об авторе</h1>
         <p class="about-author__text">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем
@@ -212,13 +212,13 @@
       </ul>
       <div class="social-section">
         <a href="https://github.com/vadagama" target="_blank" class="social-section__github"><img
-            src="images/github-iconef17998440751ab3bc5883e0084d9f57.svg" alt="github"></a>
+            src="<%=require ('./images/github-icon.svg') %>" alt="github"></a>
         <a href="https://www.facebook.com/oleg.krasnov.9" target="_blank" class="social-section__facebook"><img
-            src="images/fb-iconf6b9c81fa1f207b310c694fde404ef4c.svg" alt="facebook"></a>
+            src="<%=require ('./images/fb-icon.svg') %>" alt="facebook"></a>
       </div>
     </footer>
   </div>
-  <script src="main.d1dd7e8f272def110a81.js?5e11d92697a36dac329d"></script>
+  <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
 </body>
 
 </html>
