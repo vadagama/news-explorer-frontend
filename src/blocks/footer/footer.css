@@ -6,6 +6,8 @@
     display: flex;
     flex: 2 0px;
     align-items: center;
+    padding-left: 104px;
+    padding-right: 104px;
 }
 
 @media only screen and (min-width : 426px) and (max-width : 768px) {
@@ -14,6 +16,8 @@
         flex-flow: column-reverse;
         align-items: flex-start;
         position: relative;
+        padding-left: 40px;
+        padding-right: 40px;
     }
 }
 
@@ -23,5 +27,7 @@
         flex-flow: column-reverse;
         align-items: flex-start;
         position: relative;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
