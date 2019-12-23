@@ -1,0 +1,22 @@
+@import url(_light/header__item_light.css);
+@import url(_menu/header__item_menu.css);
+@import url(_main/header__item_main.css);
+@import url(_curent/header__item_curent.css);
+@import url(_curent-light/header__item_curent-light.css);
+
+.header__item {
+    text-decoration: none;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    margin-right: 1.5em;
+}
+
+@media only screen and (max-width : 850px){
+    .header__item {
+        margin-right: 1em;
+    }
+}

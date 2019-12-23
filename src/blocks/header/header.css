@@ -1,6 +1,11 @@
 @import url(_login/header_login.css);
 @import url(_about/header_about.css);
 @import url(_main/header_main.css);
+@import url(__item/header__item.css);
+@import url(__items/header__items.css);
+@import url(__logo/header__logo.css);
+@import url(__devider/header__devider.css);
+@import url(__menu/header__menu.css);
 
 .header {
     margin-left: auto;
