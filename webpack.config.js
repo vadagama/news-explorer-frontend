@@ -12,9 +12,9 @@ new webpack.DefinePlugin({
 
 module.exports = {
     entry: {
-        index: './src/pages/index/index.js',
-        saved: './src/pages/saved/saved.js',
-        about: './src/pages/about/about.js'
+        index: './src/js/index.js',
+        saved: './src/js/saved.js',
+        about: './src/js/about.js'
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
