@@ -1,0 +1,21 @@
+.about-author__img {
+    padding-right: 56px;
+    height: 60%;
+    width: 60%;
+    min-width: 216px;
+    max-width: 464px;
+}
+
+@media only screen and (min-width : 426px) and (max-width : 768px) {
+    .about-author__img  {
+        padding-right: 32px;
+    }
+}
+
+@media only screen and (max-width : 425px){
+    .about-author__img  {
+        padding-right: 0px;
+        padding-bottom: 24px;
+        height: 100%;
+    }
+}

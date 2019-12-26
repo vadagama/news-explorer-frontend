@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="News Explorer - агрегатор новостей">
+  <meta name="author" content="Oleg Krasnov">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>News explorer</title>
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.about.css %>">
+  <link rel="shortcut icon" type="image/png" href="<%=require ('../../images/favicon.png') %>" />
+</head>
+
+<body>
+  <div class="root">
+    <header class="header header_about">
+      <div class="header__menu">
+        <a href="index.html" class="header__logo header__logo_light">NewsExplorer</a>
+        <ul class="header__items">
+          <li><a href="index.html" class="header__item header__item_light">Главная</a></li>
+          <li><a href="about.html" class="header__item header__item_curent-light">О проекте</a></li>
+          <li><a href="saved.html" class="header__item header__item_light">Сохраненные статьи</a></li>
+          <li><a href="saved.html" class="button button_login-light">Грета <img
+                src="<%=require ('../../images/logout-icon-light.svg') %>" alt="Logout icon"></a></li>
+          <li><a href="index.html"><img class="header__item header__item_menu" alt="menu icon"
+                src="<%=require ('../../images/menu-icon-light.svg') %>"></a></li>
+        </ul>
+      </div>
+      <hr class="header__devider">
+    </header>
+
+    <!-- # Search results section -->
+
+    <section class="clients">
+      <h1 class="clients__title">Клиентам</h1>
+      <p class="clients__content">Этот сайт — дипломный проект студента Яндекс.Практикума. Его цель — показать, чему
+        научился студент, какими технологиями владеет.</p>
+
+      <p class="clients__content">Вёрстка сайта выполнена по методологии БЭМ. Это делает сайт гибким и масштабируемым.
+        Кроме того, добавлять новые страницы и функциональность проще и быстрее, чем в проектах, выполненных по другим
+        методологиям. Также сайт проще и дешевле поддерживать.</p>
+
+      <p class="clients__content">Студент самостоятельно написал серверный код. В нём реализована функциональность
+        регистрации и входа в систему. Сайт позволяет искать новости за прошедшую неделю и сохранять понравившиеся в
+        личном кабинете. На сервере избранные новости хранятся в базе данных Mongo DB. Студент запрограммировал надёжный
+        сервер: отказоустойчивый и безопасный.</p>
+
+      <p class="clients__content">При создании проекта была использована сборка технологией Webpack. Это современный
+        подход к разработке сайтов. Код оптимизируется, а значит, сайт работает быстрее. Также сайт работает в старых
+        браузерах. Даже если посетители — пользователи старых операционных систем, у них не будет проблем с
+        отображением. А значит, потенциальная аудитория возрастает.</p>
+
+      <p class="clients__content">Проект был проверен экспертами Яндекс.Практикума. Если вашему бизнесу нужен сайт, мы
+        рекомендуем обратиться к этому студенту.</p>
+    </section>
+
+    <!-- # Technologies section -->
+
+    <section class="technologies">
+      <h2 class="technologies__title">Используемые технологии</h2>
+      <div class="technologies__items-container">
+        <div class="technologies__column">
+          <div class="technologies__item">
+            <p class="technologies-item__description">HTML</p>
+            <img class="technologies-item__image" src="<%=require ('../../images/html.png') %>" alt="HTML">
+          </div>
+          <div class="technologies__item">
+            <p class="technologies-item__description">CSS</p>
+            <img class="technologies-item__image" src="<%=require ('../../images/css.png') %>" alt="CSS">
+          </div>
+        </div>
+        <div class="technologies__column">
+          <div class="technologies__item">
+            <p class="technologies-item__description">Java Script</p>
+            <img class="technologies-item__image" src="<%=require ('../../images/js.png') %>" alt="Java Script">
+          </div>
+          <div class="technologies__item">
+            <p class="technologies-item__description">Webpack</p>
+            <img class="technologies-item__image" src="<%=require ('../../images/webpack.png') %>" alt="Webpack">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- # About author section -->
+
+    <div class="about-author">
+      <img src="<%=require ('../../images/about-author.png') %>" alt="about author" class="about-author__img">
+      <div class="about-author__block">
+        <h2 class="about-author__header">Об авторе</h2>
+        <p class="about-author__text">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем
+          вы
+          занимаетесь, какими технологиями разработки владеете.</p>
+        <p class="about-author__text">
+          Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь
+          потенциальным заказчикам.</p>
+      </div>
+    </div>
+
+    <!-- # History section -->
+
+    <div class="history">
+      <div class="history__title-block">
+        <h2 class="history__title">История коммитов из GitHub</h2>
+        <a class="history__link" href="https://github.com/vadagama"><span>Открыть в Github <img src="<%=require ('../../images/arrow-icon.svg') %>" alt="arrow"></span></a>
+      </div>
+      <div class="commits__slider" data-glide-el="track">
+          <ul class="commits__list">
+            <li class="commits__list-item commit">
+              <p class="commit__date"><time datetime="2019-08-02 19:00">2 августа, 2019</time></p>
+              <img class="commit__ava" src="<%=require('../../images/fedorova.jpg')%>" width="48" height="48"  alt="Commit author photo">
+              <div class="commit__author">
+                <p class="commit__author-name">Мария Фёдорова</p>
+                <address><a href="" class="commit__author-link">mariiifed@yandex.ru</a></address>
+              </div>
+              <p class="commit__text">You can install this plugin directly from NetBeans Plugin Portal: in NetBeans, open   Tools >
+                  Plugins > Available plugins   and find and install Emmet plugin.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    <!-- # Footer section -->
+
+    <footer class="footer">
+      <span class="footer__copyrights">© 2019 Supersite</span>
+      <ul class="footer__menu">
+        <li><a class="footer__menu-item" href="index.html">Главная</a></li>
+        <li><a class="footer__menu-item" href="about.html">О проекте</a></li>
+        <li><a class="footer__menu-item" href="https://praktikum.yandex.ru/" target="_blank">Яндекс.Практикум</a></li>
+      </ul>
+      <div class="social-section">
+        <a href="https://github.com/vadagama" target="_blank" class="social-section__github"><img
+            src="<%=require ('../../images/github-icon.svg') %>" alt="github"></a>
+        <a href="https://www.facebook.com/oleg.krasnov.9" target="_blank" class="social-section__facebook"><img
+            src="<%=require ('../../images/fb-icon.svg') %>" alt="facebook"></a>
+      </div>
+    </footer>
+
+  </div>
+  <script src="<%= htmlWebpackPlugin.files.chunks.about.entry %>"></script>
+</body>
+
+</html>

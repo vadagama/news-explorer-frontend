@@ -1,0 +1,15 @@
+.clients__title {
+    padding-top: 80px;
+    font-family: Roboto Slab, "Times New Roman", Times, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 46px;
+    color: #1A1B22;
+}
+
+@media only screen and (max-width : 425px) {
+    .clients__title  {
+        font-size: 30px;
+    }
+}

@@ -1,0 +1,22 @@
+@import url(./__title/commits__title.css);
+@import url(./__list/commits__list.css);
+
+.commits {
+	position: relative;
+	padding-top: 33px;
+	padding-bottom: 17px;
+	background-color: rgb(245, 246, 247);
+}
+
+@media (min-width: 768px) {
+	.commits {
+		padding-top: 41px;		
+	}
+}
+
+@media (min-width: 1204px) {
+	.commits {
+		padding-top: 80px;
+		padding-bottom: 56px;
+	}
+}

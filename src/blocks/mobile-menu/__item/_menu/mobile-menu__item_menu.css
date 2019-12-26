@@ -1,0 +1,13 @@
+.mobile-menu__item_menu {
+    margin-left: 0px;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    visibility: hidden;
+    width: 0px;
+}

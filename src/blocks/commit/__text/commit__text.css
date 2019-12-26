@@ -1,0 +1,15 @@
+.commit__text {
+	margin: 0;
+	margin-top: 16px;
+	width: 100%;
+
+	font-family: 'Roboto', 'Arial', sans-serif;
+	color: rgb(26, 27, 34);
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 22px;
+
+	font-style: normal;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}

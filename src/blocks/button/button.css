@@ -1,0 +1,7 @@
+@import url(_login/button_login.css);
+@import url(_login-light/button_login-light.css);
+@import url(_more-cards/button_more-cards.css);
+
+.button {
+    border-radius: 100px;
+}

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="News Explorer - агрегатор новостей">
+  <meta name="author" content="Oleg Krasnov">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>News explorer</title>
+  <link rel="stylesheet" href="style.06f8b9fbc8ac2d46489e.css" />
+  <link rel="shortcut icon" type="image/png" href="images/css6f934761fd70640a988b0ff32eb2692c.png" />
+</head>
+
+<body>
+  <div class="root">
+
+    <!-- Mobile menu module start -->
+    <div class="mobile-menu">
+        <div class="mobile-menu__content">
+            <a href="index.html" class="mobile-menu__logo">NewsExplorer</a>
+            <a href="index.html"><img class="mobile-menu__item_menu-close" alt="menu icon" src="images/close-menu-icon700950e217fda93b4de3b68d51eb4ac7.svg"></a>
+            <hr class="mobile-menu__devider">
+            <ul class="mobile-menu__items">
+              <li><a href="index.html" class="mobile-menu__item">Главная</a></li>
+              <li><a href="about.html" class="mobile-menu__item">О проекте</a></li>
+              <li><a href="saved.html" class="mobile-menu__item">Сохраненные статьи</a></li>
+              <li><a href="saved.html" class="mobile-menu__button">Грета <img src="images/logout-icon6e3ef1cf54054874c190850e61f4fc5b.svg" alt="Logout icon"></a></li>
+            </ul>
+          </div>
+    </div>
+    <!-- Mobile menu module end -->
+
+    <!-- Login popup module start -->
+    <div class="popup popup_login">
+      <div class="popup__content">
+        <a href="index.html"><img class="popup__closer" alt="close popup" src="images/close-popup-icon0c3c0df47191089b257de1a5d7800193.svg"></a>
+        <form class="form">
+          <h1 class="form__header">Вход</h1>
+          <span class="form__input-label">Email</span>
+          <input class="form__input" type="text" name="username" placeholder="Введите email" />
+          <label class="form__input-error">Неправильный формат email</label>
+          <span class="form__input-label">Пароль</span>
+          <input class="form__input" type="password" name="password" placeholder="Введите пароль" />
+          <label class="form__input-error">Неправильный формат пароля</label>
+          <button class="form__button" type="submit" value="Login" name="button">Войти</button>
+          <span class="form__another-action-label">или <a class="form__another-action"
+              href="index.html">Зарегистрироваться</a></span>
+        </form>
+      </div>
+    </div>
+    <!-- Login popup module end -->
+
+    <!-- Registration popup module start -->
+    <div class="popup popup_registration">
+      <div class="popup__content popup__content_registration">
+        <a href="index.html"><img class="popup__closer" alt="close popup" src="images/close-popup-icon0c3c0df47191089b257de1a5d7800193.svg"></a>
+        <form class="form">
+          <h1 class="form__header">Регистрация</h1>
+          <span class="form__input-label">Email</span>
+          <input class="form__input" type="text" name="username" placeholder="Введите email" />
+          <label class="form__input-error">Неправильный формат email</label>
+          <span class="form__input-label">Пароль</span>
+          <input class="form__input" type="password" name="password" placeholder="Введите пароль" />
+          <label class="form__input-error">Неправильный формат пароля</label>
+          <span class="form__input-label">Имя</span>
+          <input class="form__input" type="password" name="password" placeholder="Введите свое имя" />
+          <label class="form__input-error">Неправильный формат имени</label>
+          <label class="form__input-error form__input-error_button">Неправильный формат имени</label>
+          <button class="form__button form__button_disable" type="submit" value="Login" name="button">Войти</button>
+          <span class="form__another-action-label">или <a class="form__another-action"
+              href="index.html">Зарегистрироваться</a></span>
+        </form>
+      </div>
+    </div>
+    <!-- Registration popup module end -->
+
+    <!-- Registration done popup module start -->
+    <div class="popup popup_done">
+      <div class="popup__content popup__content_done">
+        <a href="index.html"><img class="popup__closer" alt="close popup" src="images/close-popup-icon0c3c0df47191089b257de1a5d7800193.svg"></a>
+        <form class="form">
+          <h1 class="form__header">Пользователь успешно зарегистрирован!</h1>
+          <a class="form__link" href="saved.html">Выполнить вход</a>
+        </form>
+      </div>
+    </div>
+    <!-- Registration done popup module end -->
+
+    <!-- # Header section -->
+
+    <header class="header header_main">
+      <div class="header__menu">
+        <a href="index.html" class="header__logo header__logo_main">NewsExplorer</a>
+        <ul class="header__items">
+          <li><a href="index.html" class="header__item header__item_curent">Главная</a></li>
+          <li><a href="about.html" class="header__item header__item_main">О проекте</a></li>
+          <li><a href="saved.html" class="button button_login">Авторизоваться</a></li>
+          <li><a href="index.html"><img class="header__item header__item_menu" alt="menu icon" src="images/menu-icon48e1c7c5dcdbd0457e84cc1bfe9d746b.svg"></a></li>
+        </ul>
+      </div>
+      <hr class="header__devider">
+      <div class="search">
+        <h1 class="search__header">Что в мире творится?</h1>
+        <p class="search__content">Находите самые свежие статьи на любую тему и сохраняйте в своём личном кабинете.</p>
+        <div class="search__field">
+          <input class="search__input" placeholder="Введите тему новости"/>
+          <button class="search__button">Искать</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- # Search results section -->
+
+    <section class="search-results">
+      <h2 class="search-results__title">Результаты поиска</h2>
+      <div class="search-results__cards">
+        <div class="card">
+          <div class="card__image">
+            <a class="card__login-label" href="index.html">Войдите, чтобы сохранять статьи</a>
+            <a class="card__bookmark" href="index.html"></a>
+          </div>
+          <div class="card__bottom-section">
+            <div class="card__date">2 августа, 2019</div>
+            <div class="card__title">Национальное достояние – парки</div>
+            <div class="card__content">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
+              складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к
+              природе.</div>
+            <div class="card__source">Лента.ру</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__image">
+            <a class="card__bookmark card__bookmark_marked" href="index.html"></a>
+          </div>
+          <div class="card__bottom-section">
+            <div class="card__date">2 августа, 2019</div>
+            <div class="card__title">Национальное достояние – парки</div>
+            <div class="card__content">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
+              складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к
+              природе.</div>
+            <div class="card__source">Лента.ру</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__image">
+            <a class="card__bookmark" href="index.html"></a>
+          </div>
+          <div class="card__bottom-section">
+            <div class="card__date">2 августа, 2019</div>
+            <div class="card__title">Национальное достояние – парки</div>
+            <div class="card__content">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
+              складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к
+              природе.</div>
+            <div class="card__source">Лента.ру</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__image">
+            <a class="card__bookmark" href="index.html"></a>
+          </div>
+          <div class="card__bottom-section">
+            <div class="card__date">2 августа, 2019</div>
+            <div class="card__title">Национальное достояние – парки</div>
+            <div class="card__content">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
+              складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к
+              природе.</div>
+            <div class="card__source">Лента.ру</div>
+          </div>
+        </div>
+      </div>
+      <button class="button button_more-cards">Показать еще</button>
+
+      <div class="search-results__searching">
+        <img src="images/not-found-icon00513beccdefc46c1621b2b9f8df68ed.svg" alt="Nothing was found" class="searching__img">
+        <p class="searching__title">Ничего не найдено</p>
+        <p class="searching__description">К сожалению по вашему запросу
+          ничего не найдено.</p>
+      </div>
+
+      <div class="search-results__searching">
+        <i class="search-results__spinner"></i>
+        <p class="searching__description">Идет поиск новостей...</p>
+      </div>
+    </section>
+    <!-- # About author section -->
+
+    <div class="about-author">
+      <img src="images/about-authore4a8fe7853596879b8dcc1aec202a19b.png" alt="about author" class="about-author__img">
+      <div class="about-author__block">
+        <h1 class="about-author__header">Об авторе</h1>
+        <p class="about-author__text">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем
+          вы
+          занимаетесь, какими технологиями разработки владеете.</p>
+        <p class="about-author__text">
+          Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь
+          потенциальным заказчикам.</p>
+      </div>
+    </div>
+
+    <!-- # Footer section -->
+
+    <footer class="footer">
+      <span class="footer__copyrights">© 2019 Supersite</span>
+      <ul class="footer__menu">
+        <li><a class="footer__menu-item" href="index.html">Главная</a></li>
+        <li><a class="footer__menu-item" href="about.html">О проекте</a></li>
+        <li><a class="footer__menu-item" href="https://praktikum.yandex.ru/" target="_blank">Яндекс.Практикум</a></li>
+      </ul>
+      <div class="social-section">
+        <a href="https://github.com/vadagama" target="_blank" class="social-section__github"><img
+            src="images/github-iconef17998440751ab3bc5883e0084d9f57.svg" alt="github"></a>
+        <a href="https://www.facebook.com/oleg.krasnov.9" target="_blank" class="social-section__facebook"><img
+            src="images/fb-iconf6b9c81fa1f207b310c694fde404ef4c.svg" alt="facebook"></a>
+      </div>
+    </footer>
+  </div>
+  <script src="index.e0234e7a1bd2503e4ce2.js"></script>
+
+</body>
+
+</html>

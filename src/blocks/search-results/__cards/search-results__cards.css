@@ -1,0 +1,26 @@
+@import url(_done/search-results__cards_done.css);
+
+.search-results__cards {
+    padding-top: 64px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 16px;
+}
+
+@media only screen and (max-width : 634px) {
+    .search-results__cards  {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (min-width : 635px) and (max-width : 767px) {
+    .search-results__cards  {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width : 768px){
+    .search-results__cards  {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

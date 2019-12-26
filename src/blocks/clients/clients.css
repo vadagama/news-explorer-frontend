@@ -1,0 +1,25 @@
+@import url(__content/clients__content.css);
+@import url(__title/clients__title.css);
+
+.clients {
+    padding-bottom: 80px;
+    padding-left: 104px;
+    padding-right: 104px;
+    display: flex;
+    flex-flow: column;
+}
+
+@media only screen and (min-width : 426px) and (max-width : 768px) {
+    .clients  {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media only screen and (max-width : 425px){
+    .clients  {
+        padding-left: 16px;
+        padding-right: 16px;
+        display: flex;
+    }
+}

@@ -1,0 +1,7 @@
+.header__item_main {
+    color: #ffffff;
+}
+
+.header__item_main:hover {
+    color: #B6BCBF;
+}

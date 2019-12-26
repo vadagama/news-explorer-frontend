@@ -1,0 +1,14 @@
+@import url(_menu/mobile-menu__item_menu.css);
+@import url(_menu-close/mobile-menu__item_menu-close.css);
+@import url(_light/mobile-menu__item_light.css);
+@import url(_button/mobile-menu__item_button.css);
+@import url(_button-light/mobile-menu__item_button-light.css);
+
+.mobile-menu__item {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+}

@@ -1,0 +1,37 @@
+@import url(./__avatar/commit__avatar.css);
+@import url(./__author-name/commit__author-name.css);
+@import url(./__author/commit__author.css);
+@import url(./__text/commit__text.css);
+@import url(./__author-link/commit__author-link.css);
+@import url(./__date/commit__date.css);
+
+.commit {
+	box-sizing: border-box;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	padding: 17px 16px 16px 16px;
+	height: 264px;
+	background-color: rgb(255, 255, 255);
+	border-radius: 16px;
+	cursor: pointer;
+	transition: box-shadow 0.2s ease-in-out;
+}
+
+.commit:focus,
+.commit:hover {
+	box-shadow: 0 0 30px -10px rgba(8, 29, 45, 0.2);
+}
+
+@media (min-width: 768px) {
+	.commit {
+		padding: 25px 24px 16px;
+		height: 242px;
+	}
+}
+
+@media (min-width: 1204px) {
+	.commit {
+		height: 288px;
+	}
+}

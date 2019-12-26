@@ -1,0 +1,31 @@
+.header__item.header__item_menu {
+    margin-left: 0px;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    visibility: hidden;
+    width: 0px;
+}
+
+.header__item.header__item_menu:hover{
+    border: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-width: 0px;
+    padding-bottom: 0px;
+    border-spacing: 0px;
+}
+
+@media only screen and (max-width : 768px){
+    .header__item.header__item_menu {
+        visibility: visible;
+        margin-left: 16px;
+        width: 24px;
+    }
+}

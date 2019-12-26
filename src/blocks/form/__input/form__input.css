@@ -1,0 +1,18 @@
+.form__input {
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    border: none;
+    outline: none;
+    padding-top: 9px;
+    border-bottom: 1px solid #E6E8EB;
+    padding-bottom: 9px;
+    margin-bottom: 3px;
+}
+
+.form__input:hover {
+    border-bottom: 1px solid #000;
+}

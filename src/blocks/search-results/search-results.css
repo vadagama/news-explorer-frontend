@@ -1,0 +1,27 @@
+@import url(__cards/search-results__cards.css);
+@import url(__title/search-results__title.css);
+@import url(__searching/search-results__searching.css);
+@import url(__spinner/search-results__spinner.css);
+
+.search-results {
+    padding-bottom: 80px;
+    padding-left: 104px;
+    padding-right: 104px;
+    display: flex;
+    background-color: #F5F6F7;
+    flex-flow: column;
+}
+
+@media only screen and (min-width : 426px) and (max-width : 1024px) {
+    .search-results  {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media only screen and (max-width : 425px){
+    .search-results  {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}

@@ -1,0 +1,29 @@
+@import url(__content/search__content.css);
+@import url(__header/search__header.css);
+@import url(__tag-list/search__tag-list.css);
+@import url(__pre-header/search__pre-header.css);
+@import url(__button/search__button.css);
+@import url(__field/search__field.css);
+@import url(__input/search__input.css);
+@import url(_done/search_done.css);
+
+.search {
+    text-align: left;
+    max-width: 608px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (min-width : 426px) and (max-width : 768px) {
+    .search {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media only screen and (max-width : 425px){
+    .search {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}

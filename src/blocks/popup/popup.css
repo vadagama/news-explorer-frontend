@@ -1,0 +1,28 @@
+@import url(_done/popup_done.css);
+@import url(_registration/popup_registration.css);
+@import url(_login/popup_login.css);
+@import url(__closer/popup__closer.css);
+@import url(__content/popup__content.css);
+
+.popup {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.popup:before {
+  display: block;
+  content: ' ';
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  opacity: .5;
+}
+

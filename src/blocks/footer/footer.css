@@ -1,0 +1,27 @@
+@import url(__copyrights/footer__copyrights.css);
+@import url(__menu-item/footer__menu-item.css);
+@import url(__menu/footer__menu.css);
+
+.footer {
+    display: flex;
+    flex: 2 0px;
+    align-items: center;
+}
+
+@media only screen and (min-width : 426px) and (max-width : 768px) {
+    .footer  {
+        display: flex;
+        flex-flow: column-reverse;
+        align-items: flex-start;
+        position: relative;
+    }
+}
+
+@media only screen and (max-width : 425px){
+    .footer  {
+        display: flex;
+        flex-flow: column-reverse;
+        align-items: flex-start;
+        position: relative;
+    }
+}
